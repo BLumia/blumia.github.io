@@ -1,0 +1,268 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="BLumia's Dairy Wrapzone" type="application/atom+xml"><link rel="icon" href="/favicon.png"><title>算法题解 - BLumia's Dairy Wrapzone</title><link rel="stylesheet" href="/css/main.css" type="text/css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--></head><body><div class="page-background"><div id="triangles-1" class="triangles"></div><div id="triangles-2" class="triangles"></div><div id="triangles-3" class="triangles"></div><div id="gradient-overlay"></div></div><header class="head"><nav id="nav-menu" class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li></ul></nav><h1 class="head-title"><a href="/">BLumia's Dairy Wrapzone</a></h1><h2 class="sub-title">Is that BLumia's Darkness World before?</h2></header><main class="main"><article class="post"><header class="post__head"><time datetime="2015-08-10T07:12:00.000Z" class="post__time">August 10, 2015</time><h1 class="post__title"><a href="/2015/08/10/HDU-1045(Fire-Net)题解/">HDU 1045(Fire Net)题解</a></h1></header><div class="post__main echo"><p>嘛..markdown爽..那就再爽一次..<br>相应博客园url：<a href="http://www.cnblogs.com/blumia/p/hdu1045.html" target="_blank" rel="external">这里</a><br>题解写的越发的少了，主要也只是因为题写的慢了..莫名其妙的动力减少以及难度增加导致的做题缓慢什么的.. <del>趁着这回写一次凑个数吧</del><br>以防万一，题目原文和链接均附在文末。那么先是题目分析：</p>
+<a id="more"></a>
+<h2 id="【一句话题意】">【一句话题意】</h2><p>给定大小的棋盘中部分格子存在可以阻止互相攻击的墙，问棋盘中可以放置最多多少个可以横纵攻击炮塔。</p>
+<h2 id="【题目分析】">【题目分析】</h2><p>这题本来在搜索专题里出现的..这回又在二分查找匹配专题出现了..所以当然要按照二分匹配的方法解而不是爆搜（虽然爆搜能过）。<br>问题主要就是如何缩点建图。为了使得blockhouse不能互相攻击，那么使用每行的相邻的点缩点，每列的相邻的点缩点，连边的条件就是两个点存在有相交的部分，最后这两组点求最大匹配就行了。</p>
+<h2 id="【算法流程】">【算法流程】</h2><p>应该这题也能算是标准题了吧。缩点，建图，hungary匈牙利算法求解，输出答案。完事儿了。<br>匈牙利算法以及二分最大匹配的相关内容这里就不说了。。</p>
+<p>下面的代码简单说明，本来的aleft和aright名字叫left和right，后来发现和STL的东西冲突了。。<br>fill的宏定义有更科学的方法，这里就只是单纯的抹0。以及for each是从1到n而不是从0到n。<br>因为习惯问题，数组是从1算起的。</p>
+<pre><code><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;algorithm&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;vector&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">define</span> each(i,n) (int i=<span class="number">1</span>;i&lt;=(n);++i)</span>
+<span class="preprocessor">#<span class="keyword">define</span> fill(arr) memset(arr,<span class="number">0</span>,sizeof(arr))</span>
+<span class="preprocessor">#<span class="keyword">define</span> INF <span class="number">0x3f3f3f3f</span></span>
+
+<span class="keyword">char</span> <span class="built_in">map</span>[<span class="number">6</span>][<span class="number">6</span>];
+<span class="keyword">char</span> aleft[<span class="number">6</span>][<span class="number">6</span>];
+<span class="keyword">char</span> aright[<span class="number">6</span>][<span class="number">6</span>];
+<span class="keyword">int</span> l[<span class="number">61</span>], r[<span class="number">61</span>], lCnt, rCnt;
+<span class="keyword">bool</span> graph[<span class="number">61</span>][<span class="number">61</span>];
+<span class="keyword">bool</span> vis[<span class="number">61</span>];
+
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="function"><span class="keyword">int</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> left)</span> </span>{
+    <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(right,rCnt)</span> </span>{
+        <span class="comment">//left到right有路且没遍历过 </span>
+        <span class="keyword">if</span>(graph[left][right] &amp;&amp; !vis[right]) {
+            vis[right] = <span class="literal">true</span>;
+            <span class="comment">//若right还没匹配过或跟right匹配的点找到另一个相匹配的点</span>
+            <span class="comment">//(则right就可以跟left匹配) </span>
+            <span class="keyword">if</span>(r[right]==-<span class="number">1</span> || dfs(r[right])) {
+                r[right] = left;
+                l[left] = right;
+                <span class="comment">//printf("(%d,%d)\n",left,right); </span>
+                <span class="keyword">return</span> <span class="number">1</span>;
+            }
+        }
+    }
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+
+<span class="function"><span class="keyword">int</span> <span class="title">hungary</span><span class="params">()</span> </span>{
+    <span class="keyword">int</span> ans = <span class="number">0</span>;
+    <span class="built_in">memset</span>(l,-<span class="number">1</span>,<span class="keyword">sizeof</span>(l));
+    <span class="built_in">memset</span>(r,-<span class="number">1</span>,<span class="keyword">sizeof</span>(r));    
+    <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(i,lCnt)</span> </span>{ <span class="comment">//row point cnt</span>
+        <span class="keyword">if</span>(l[i] == -<span class="number">1</span>) {
+            fill(vis);
+            ans += dfs(i);
+        }
+    }
+    <span class="keyword">return</span> ans;
+}
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{
+
+    <span class="keyword">int</span> n;
+    <span class="keyword">char</span> buffer[<span class="number">10</span>];
+    <span class="keyword">while</span>(gets(buffer)) {
+        <span class="comment">//proc input</span>
+        <span class="keyword">if</span> (buffer[<span class="number">0</span>] == <span class="string">'0'</span>) <span class="keyword">break</span>;
+        <span class="built_in">sscanf</span>(buffer,<span class="string">"%d"</span>,&amp;n);
+        <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(line,n)</span> </span>{
+            gets(buffer);
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(col,n)</span> </span>{
+                <span class="built_in">map</span>[line][col] = buffer[col-<span class="number">1</span>];
+            }
+        }
+        <span class="comment">//create grapth [ Marking up Points ] </span>
+        fill(aleft);
+        fill(aright);
+        lCnt = <span class="number">1</span>;
+        <span class="keyword">int</span> pre = <span class="number">0</span>;
+        <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(row,n)</span> </span>{
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(col,n)</span> </span>{
+                <span class="keyword">if</span>(<span class="built_in">map</span>[row][col]==<span class="string">'X'</span>) {
+                    <span class="keyword">if</span>(pre==lCnt) ++lCnt;
+                    <span class="keyword">continue</span>;
+                }
+                aleft[row][col] = lCnt;
+                pre = lCnt;
+            }
+            <span class="keyword">if</span>(pre==lCnt) ++lCnt;
+        }
+        lCnt = pre;
+        rCnt = <span class="number">1</span>;
+        pre = <span class="number">0</span>;
+        <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(col,n)</span> </span>{
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(row,n)</span> </span>{
+                <span class="keyword">if</span>(<span class="built_in">map</span>[row][col]==<span class="string">'X'</span>) {
+                    <span class="keyword">if</span>(pre==rCnt) ++rCnt;
+                    <span class="keyword">continue</span>;
+                }
+                aright[row][col] = rCnt;
+                pre = rCnt;
+            }
+            <span class="keyword">if</span>(pre==rCnt) ++rCnt;
+        }
+        rCnt = pre;
+        <span class="comment">//create grapth [ Shrinking Points ]</span>
+        fill(graph);
+        <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(row,n)</span> </span>{
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(col,n)</span> </span>{
+                <span class="keyword">if</span>(<span class="built_in">map</span>[row][col]==<span class="string">'.'</span>)
+                    graph[aleft[row][col]][aright[row][col]] = <span class="literal">true</span>;
+            }
+        }
+        <span class="comment">//doWork</span>
+        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,hungary());
+    }
+
+}
+</code></pre><hr>
+<p>题目链接：<a href="http://acm.hdu.edu.cn/showproblem.php?pid=1045" target="_blank" rel="external">Fire Net（HDU 1045）</a></p>
+<p>题目属性：二分图最大匹配 （如果愿意你可以去爆搜..）</p>
+<p>相关题目：2444 1083 1281 2819 2389 4185 poj3020 …</p>
+<p>题目原文：<br>【desc】<br>Suppose that we have a square city with straight streets. A map of a city is a square board with n rows and n columns, each representing a street or a piece of wall. </p>
+<p>A blockhouse is a small castle that has four openings through which to shoot. The four openings are facing North, East, South, and West, respectively. There will be one machine gun shooting through each opening. </p>
+<p>Here we assume that a bullet is so powerful that it can run across any distance and destroy a blockhouse on its way. On the other hand, a wall is so strongly built that can stop the bullets. </p>
+<p>The goal is to place as many blockhouses in a city as possible so that no two can destroy each other. A configuration of blockhouses is legal provided that no two blockhouses are on the same horizontal row or vertical column in a map unless there is at least one wall separating them. In this problem we will consider small square cities (at most 4x4) that contain walls through which bullets cannot run through. </p>
+<p>The following image shows five pictures of the same board. The first picture is the empty board, the second and third pictures show legal configurations, and the fourth and fifth pictures show illegal configurations. For this board, the maximum number of blockhouses in a legal configuration is 5; the second picture shows one way to do it, but there are several other ways. </p>
+<p><img src="http://blogblumia-typecho.stor.sinaapp.com/usr/uploads/2015/08/2630942644.jpg" alt="看我多良心，还给备个图"></p>
+<p>Your task is to write a program that, given a description of a map, calculates the maximum number of blockhouses that can be placed in the city in a legal configuration.<br>【In】<br>The input file contains one or more map descriptions, followed by a line containing the number 0 that signals the end of the file. Each map description begins with a line containing a positive integer n that is the size of the city; n will be at most 4. The next n lines each describe one row of the map, with a ‘.’ indicating an open space and an uppercase ‘X’ indicating a wall. There are no spaces in the input file.<br>【Out】<br>For each test case, output one line containing the maximum number of blockhouses that can be placed in the city in a legal configuration.<br>【SampIn】</p>
+<pre>4
+.X..
+....
+XX..
+....
+2
+XX
+.X
+3
+.X.
+X.X
+.X.
+3
+...
+.XX
+.XX
+4
+....
+....
+....
+....
+0</pre>
+【SampOut】
+<pre>5
+1
+5
+2
+4</pre>
+
+
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/算法题解/" class="post__tag__link">算法题解</a></li></ul><a href="/2015/08/10/HDU-1045(Fire-Net)题解/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2015-07-20T05:55:00.000Z" class="post__time">July 20, 2015</time><h1 class="post__title"><a href="/2015/07/20/POJ-3279(Fliptile)题解/">POJ 3279(Fliptile)题解</a></h1></header><div class="post__main echo"><p>能用Markdown排版真爽。于是头一回打算先把题解发在这个我本来只发所谓日记的地方…<br>相应博客园url：<a href="http://www.cnblogs.com/blumia/p/poj3279.html" target="_blank" rel="external">这里</a><br>以防万一，题目原文和链接均附在文末。那么先是题目分析：</p>
+<a id="more"></a>
+<h2 id="【一句话题意】">【一句话题意】</h2><p>给定长宽的黑白棋棋盘摆满棋子，每次操作可以反转一个位置和其上下左右共五个位置的棋子的颜色，求要使用最少翻转次数将所有棋子反转为黑色所需翻转的是哪些棋子（这句话好长…）。</p>
+<h2 id="【题目分析】">【题目分析】</h2><p>盯着奇怪的题目看了半天发现和奶牛没什么卵关系..奶牛智商高了产奶高是什么鬼说法…</p>
+<p>这题刚开始被放到搜索的分类下了..然而这和搜索有什么关系..没经验所以想了各种和搜索沾边的方法，结果没想出解法，直到看了网上的题解，压根不是搜索啊有木有。</p>
+<p>然后这题网上给的分类是简单题..简单题..蒟蒻跪了..</p>
+<p>好了开始说解法。首先根据题目，每次操作都会影响到周围的“棋子”，而要使得每个1都被反转为0，那么我们就应当每次都反转1下方的棋子以改变1为0.</p>
+<p>那么，当我们处理过1到n-1行的时候，前n-1行就都已经是0了，最后我们只需要检查最后一行是不是全部为0就可以检查这次的出操作是否正确了。如果正确且最小，那就存起来。最后输出，万事大吉。</p>
+<p>当然，因为我们要改变第x行的1为0需要反转的是x+1行的位置。而这个整个规则是我们验证一组操作是否能达到目的所用的，那么我们需要在验证前先确定操作（没操作怎么验证..）。</p>
+<p>于是根据规则内容可知，只需要能确认第一行的翻转情况，就能够推出下面所有的翻转情况并验证是否正确。于是需要做的就是枚举第一行的情况了。</p>
+<h2 id="【算法流程】">【算法流程】</h2><p>整个代码分了四部分，处理输入部分没啥可说的，接下来就是doWork干活部分了..</p>
+<p>需要干的活就是枚举第一行的所有情况然后对于每次枚举都计算验证是否符合要求以及反转所需的次数。其中，第一行的状态数量可以使用左移运算优化（效率比pow高），于是总共枚举的数量就有1&lt;&lt;col次。另外，因为这使得一行的状态是由一个数字保存的，所以依然使用位运算取得是否翻转的状态。</p>
+<p>将枚举好的一次首行状态存好后就可以交给calc计算和验证了。验证就是通过上述翻转规则操作。其中get(x,y)为取得某个位置是否为1的状态的方法（过程）。</p>
+<p>最后检查结果就好。下面是代码。<br>哦对了，我似乎滥用了each宏定义…无视即可。</p>
+<pre><code><span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstdlib&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;cstring&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">include</span> <span class="string">&lt;queue&gt;</span></span>
+<span class="preprocessor">#<span class="keyword">define</span> each(i,n) (int i=<span class="number">1</span>;i&lt;=(n);++i)</span>
+<span class="preprocessor">#<span class="keyword">define</span> INF <span class="number">0x3f3f3f3f</span></span>
+
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+
+<span class="keyword">int</span> row,col;
+<span class="keyword">int</span> arr[<span class="number">20</span>][<span class="number">20</span>];
+<span class="keyword">int</span> flip[<span class="number">20</span>][<span class="number">20</span>],ans[<span class="number">20</span>][<span class="number">20</span>];
+<span class="keyword">int</span> dir[<span class="number">5</span>][<span class="number">2</span>] = {
+    <span class="number">0</span>,<span class="number">0</span>, <span class="number">0</span>,<span class="number">1</span>, <span class="number">0</span>,-<span class="number">1</span>, -<span class="number">1</span>,<span class="number">0</span>, <span class="number">1</span>,<span class="number">0</span> 
+};
+
+<span class="function"><span class="keyword">int</span> <span class="title">get</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">int</span> y)</span> </span>{
+    <span class="keyword">int</span> c = arr[x+<span class="number">1</span>][y+<span class="number">1</span>];
+    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;<span class="number">5</span>;i++) {
+        <span class="keyword">int</span> dx = x + dir[i][<span class="number">0</span>];
+        <span class="keyword">int</span> dy = y + dir[i][<span class="number">1</span>];
+        <span class="keyword">if</span>(dx &gt;=<span class="number">0</span> &amp;&amp; dx&lt;row &amp;&amp; dy&gt;=<span class="number">0</span> &amp;&amp; dy&lt;col) {
+            c+=flip[dx][dy];
+        }
+    }
+    <span class="keyword">return</span> c&amp;<span class="number">1</span>; <span class="comment">// with flip state, if odd return 1</span>
+}
+
+<span class="function"><span class="keyword">int</span> <span class="title">calc</span><span class="params">()</span> </span>{
+    <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(i,row-<span class="number">1</span>)</span> </span>{
+        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>;j&lt;col;j++) {
+            <span class="keyword">if</span>(get(i-<span class="number">1</span>,j)) ++flip[i][j];
+        }
+    }
+    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;col;i++) { <span class="comment">// check last line</span>
+        <span class="keyword">if</span>(get(row-<span class="number">1</span>,i)) <span class="keyword">return</span> <span class="number">0</span>;
+    }
+    <span class="keyword">int</span> cnt = <span class="number">0</span>;
+    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;row;i++) { <span class="comment">//统计翻转的次数  </span>
+        <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;col;j++) {
+            cnt += flip[i][j];  
+        }
+    }
+    <span class="keyword">return</span> cnt;
+}
+
+
+<span class="function"><span class="keyword">void</span> <span class="title">doWork</span><span class="params">()</span> </span>{
+    <span class="keyword">int</span> cnt = INF;
+    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;(<span class="number">1</span>&lt;&lt;col);i++) { <span class="comment">//from 0000 to 1111</span>
+        <span class="built_in">memset</span>(flip,<span class="number">0</span>,<span class="keyword">sizeof</span>(flip));
+        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;col;j++) {
+            flip[<span class="number">0</span>][col-j-<span class="number">1</span>] = (i&gt;&gt;j)&amp;<span class="number">1</span>; <span class="comment">//get pos state form binary number</span>
+        }
+        <span class="keyword">int</span> num = calc();
+        <span class="keyword">if</span> (num&lt;cnt &amp;&amp; num!=<span class="number">0</span>) {
+            cnt = num;
+            <span class="built_in">memcpy</span>(ans,flip,<span class="keyword">sizeof</span>(flip));
+        }
+    }
+    <span class="keyword">if</span> (cnt==INF) <span class="built_in">printf</span>(<span class="string">"IMPOSSIBLE\n"</span>);
+    <span class="keyword">else</span> {
+        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;row;i++) {  
+            <span class="built_in">printf</span>(<span class="string">"%d"</span>,ans[i][<span class="number">0</span>]);  
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(j,col-<span class="number">1</span>)</span> </span>{
+                <span class="built_in">printf</span>(<span class="string">" %d"</span>,ans[i][j]);
+            }
+            <span class="built_in">printf</span>(<span class="string">"\n"</span>);  
+        }
+    }
+}
+
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>{
+
+    <span class="keyword">while</span>(~<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;row,&amp;col)) {
+        <span class="built_in">memset</span>(arr,<span class="number">0</span>,<span class="keyword">sizeof</span>(arr));
+        <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(i,row)</span> </span>{
+            <span class="function"><span class="keyword">for</span> <span class="title">each</span><span class="params">(j,col)</span> </span>{
+                <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;arr[i][j]);
+            }
+        }
+
+        doWork();
+    }
+
+}
+</code></pre><hr>
+<p>题目链接：<a href="http://poj.org/problem?id=3279" target="_blank" rel="external">Fliptile（POJ 3279）</a></p>
+<p>题目属性：枚举 简单优化 （我真不知道算不算搜索…）</p>
+<p>相关题目：poj3276</p>
+<p>题目原文：<br>【desc】<br>Farmer John knows that an intellectually satisfied cow is a happy cow who will give more milk. He has arranged a brainy activity for cows in which they manipulate an M × N grid (1 ≤ M ≤ 15; 1 ≤ N ≤ 15) of square tiles, each of which is colored black on one side and white on the other side.</p>
+<p>As one would guess, when a single white tile is flipped, it changes to black; when a single black tile is flipped, it changes to white. The cows are rewarded when they flip the tiles so that each tile has the white side face up. However, the cows have rather large hooves and when they try to flip a certain tile, they also flip all the adjacent tiles (tiles that share a full edge with the flipped tile). Since the flips are tiring, the cows want to minimize the number of flips they have to make.</p>
+<p>Help the cows determine the minimum number of flips required, and the locations to flip to achieve that minimum. If there are multiple ways to achieve the task with the minimum amount of flips, return the one with the least lexicographical ordering in the output when considered as a string. If the task is impossible, print one line with the word “IMPOSSIBLE”.<br>【In】<br>Line 1: Two space-separated integers: M and N<br>Lines 2.. M+1: Line i+1 describes the colors (left to right) of row i of the grid with N space-separated integers which are 1 for black and 0 for white<br>【Out】<br>Lines 1.. M: Each line contains N space-separated integers, each specifying how many times to flip that particular location.<br>【SampIn】<br>4 4<br>1 0 0 1<br>0 1 1 0<br>0 1 1 0<br>1 0 0 1<br>【SampOut】<br>0 0 0 0<br>1 0 0 1<br>1 0 0 1<br>0 0 0 0</p>
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/算法题解/" class="post__tag__link">算法题解</a></li></ul><a href="/2015/07/20/POJ-3279(Fliptile)题解/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2015 BLumia</div><menu class="page-menu u-fr"><li class="page-menu__item"><span title="Previous" class="page-menu__link icon-arrow-left page-menu__link--disabled"></span></li><li class="page-menu__item"><span title="Next" class="page-menu__link icon-arrow-right page-menu__link--disabled"></span></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
+j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})
+(document,"script","blogblumia","count");
+</script></body></html>
