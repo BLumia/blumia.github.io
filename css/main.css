@@ -835,7 +835,7 @@ video {
   }
   .head,
   .foot {
-    padding: 20px;
+    padding: 20px 0px;
     height: auto;
     line-height: inherit;
   }
