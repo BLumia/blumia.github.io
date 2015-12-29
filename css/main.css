@@ -206,7 +206,7 @@ th {
 }
 html {
   background: #eee;
-  color: #666;
+  color: #333 /*$base-font-color*/;
 }
 body {
   font-size: 14px;
@@ -284,6 +284,15 @@ video {
   -webkit-animation: triangles-scroll 20s infinite linear;
   animation: triangles-scroll 20s infinite linear;
 }
+#triangles-4 {
+  background-image: url("../img/o_triangles-1.png");
+}
+#triangles-5 {
+  background-image: url("../img/o_triangles-2.png");
+}
+#triangles-6 {
+  background-image: url("../img/o_triangles-3.png");
+}
 #gradient-overlay {
   width: 100%;
   height: 100%;
@@ -291,13 +300,20 @@ video {
   transition: all 1s ease-in-out;
   background: linear-gradient(rgba(17,157,187,0.9) 0px, #4020e0 75%, #1059b9 100%) repeat scroll 0% 0%;
 }
+#gradient-overlay-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 1s ease-in-out;
+  background: transparent linear-gradient(rgba(7,24,36,0.94) 0px, rgba(12,4,54,0.95) 75%, #020d21 100%) repeat scroll 0% 0%;
+}
 .page-background {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: fixed;
   z-index: -1;
-  background-color: #b17;
+  background-color: #333;
 }
 @-moz-keyframes triangles-scroll {
   0% {
@@ -681,8 +697,9 @@ video {
   overflow: hidden;
   border-radius: 6px;
   margin-top: 30px;
-  background-color: #fff;
+  background-color: #eee;
   box-shadow: 0px 0px 8px #999;
+  background-image: url("../img/title.png");
 }
 .post__head {
   margin: 45px 60px;
@@ -756,8 +773,8 @@ video {
 .post__main blockquote {
   margin: 1.6em -60px;
   padding: 30px 60px;
-  border-left: 5px solid #ddd;
-  background-color: #eee;
+  border-left: 5px solid #eee;
+  background-color: #fff;
 }
 .post__main img {
   display: block;
@@ -765,8 +782,9 @@ video {
 }
 .post__foot {
   padding: 30px 60px;
-  border-top: 1px solid #ddd;
-  background-color: #fafafa;
+  border-top: 1px solid #ccc;
+  background-color: #eee;
+  background-image: url("../img/background.png");
 }
 .post__foot-link,
 .post__tag__link,
@@ -835,7 +853,7 @@ video {
   }
   .head,
   .foot {
-    padding: 20px 0px;
+    padding: 20px 0;
     height: auto;
     line-height: inherit;
   }
