@@ -23,7 +23,7 @@
 
 	//点击人人分享
 	$(".renren").bind("click", function(){
-		$("body").append("<div id="\"renren_repaste_div\"" style="\"display:none;\""><form name="\"renren_repaste\"" id="\"renren_repaste\"" action="\"http://share.renren.com/share/buttonshare.do\"" method="\"get\"" target="\"_blank\""><input type="\"hidden\"" name="\"link\"" value="\""" +="" location.href="" "\"=""></form></div>");
+		$("body").append("<div id=\"renren_repaste_div\" style=\"display:none;\"><form name=\"renren_repaste\" id=\"renren_repaste\" action=\"http://share.renren.com/share/buttonshare.do\" method=\"get\" target=\"_blank\"><input type=\"hidden\" name=\"link\" value=\"" + location.href + "\"></form></div>");
 		$("#renren_repaste").submit();
 		$("#renren_repaste").remove();	
 		return false;

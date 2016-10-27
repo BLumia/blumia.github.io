@@ -53,7 +53,7 @@ function check_username(){
 					$('#'+name_tip).html(message);
 					divDance(name_tip);
 				}else{
-					$('#'+name_tip).html("<font color="green">"+message+"</font>");
+					$('#'+name_tip).html("<font color='green'>"+message+"</font>");
 					result=true;
 				}
 			}
@@ -71,11 +71,11 @@ function check_passwd(){
 	var result = false;
 	var passwd = $("#password").val();
 	var length=bytes(passwd);
-	if( length <1|| length="">32){
+	if( length <1|| length>32){
 		$('#'+passwd_tip).html(editPassTip1);
 		divDance(passwd_tip);
 	}else{
-		$('#'+passwd_tip).html("<font color="green">OK</font>");
+		$('#'+passwd_tip).html("<font color='green'>OK</font>");
 		result=true;
 	}
 	return result;
@@ -98,7 +98,7 @@ function check_code(){
 			var message=xml.lastChild.firstChild.nodeValue;
 			message=$.trim(message);
 			if(message=='OK'){
-				$('#'+code_tip).html("<font color="green">OK</font>");
+				$('#'+code_tip).html("<font color='green'>OK</font>");
 				result=true;
 			}else{
 				$('#'+code_tip).html(indexlogin==1?logincodewrong:loginTip4);
@@ -162,9 +162,9 @@ function docheck(){
 					}else{
 						eval("var message="+message);
 						if(parseInt(message.news)){
-							var userpms='<span class="h_msg">（'+message.news+'）';
+							var userpms='<span class="h_msg">（'+message.news+'）</span>';
 						}else{
-							var userpms='<img alt="HDWiki" src="style/default/noshine.gif">';
+							var userpms='<img alt="HDWiki" src="style/default/noshine.gif"/>';
 						}
 						if(parseInt(message.pubpms)){
 							var url='index.php?pms-box-inbox-system';
@@ -173,14 +173,14 @@ function docheck(){
 						}
 						var data= message.channel+'<li class="bor_no pad10">欢迎你，<a href="index.php?user-space-'+message.uid+'">'+message.username+'</a></li>\n'
 								+'<li><a href="'+url+'" id="header-pms">'+userpms+'</a></li>\n'
-								+'<li><a href="index.php?user-profile">个人管理</a></li>\n';
+								+'<li><a  href="index.php?user-profile">个人管理</a></li>\n';
 						if(message.adminlogin==1)data+='<li><a href="index.php?admin_main">系统设置</a></li>\n';
-						data+='<li class="bor_no"><a href="index.php?user-logout">退出</a></li>\n'
+						data+='<li class="bor_no"><a href="index.php?user-logout" >退出</a></li>\n'
 								+'<li class="bor_no help"><a href="index.php?doc-innerlink-帮助">帮助</a></li>';
 						$('#login').html(data);
-						var data2='<h2 class="col-h2">用户登录</h2><dl id="islogin" class="col-dl twhp">'
-								+'<dd class="block"><a href="index.php?user-space-'+message.uid+'" class="a-img1"><img width="36" alt="点击进入用户中心" src="'+message.image+'"></a></dd>'
-								+'<dt><a href="index.php?user-space-'+message.uid+'" class="m-r8 bold black">'+message.username+'</a><img title="您现在拥有'+message.credit1+'金币 " src="style/default/jb.gif" class="sign"></dt>'
+						var data2='<h2 class="col-h2">用户登录</h2><dl id="islogin" class="col-dl twhp" >'
+								+'<dd class="block"><a href="index.php?user-space-'+message.uid+'" class="a-img1"><img width="36" alt="点击进入用户中心" src="'+message.image+'"/></a></dd>'
+								+'<dt><a href="index.php?user-space-'+message.uid+'" class="m-r8 bold black">'+message.username+'</a><img title="您现在拥有'+message.credit1+'金币 " src="style/default/jb.gif" class="sign"/></dt>'
 								+'<dd class="m-b8"><span>头衔：'+message.grouptitle+'</span></dd><dd><span>经验：'+message.credit2+'</span></dd>'
 								+'<dd><span>创建词条：'+message.creates+'</span><span>人气指数：'+message.views+'</span></dd>'
 								+'<dd class="twhp_dd"><span>编辑词条：'+message.edits+'</span><a href="index.php?user-space-'+message.uid+'" class="red">我的百科</a></dd>'
@@ -280,10 +280,10 @@ var Message = {
 	box : function(username){
 		this.sendto = username;
 		if (doLogin()){
-			var html = '<table border="0" class="send_massage"><tr><td width="60">'+Lang.Subject+'</td>'
-			+'<td><input id="messageSubject" type="text" style="width:300px" maxlength="35"></td></tr><tr><td>'+Lang.Content+'</td>'
-			+'<td><textarea id="messageContent" cols="47" rows="6" style="width:300px"></textarea><br>'+Lang.TipMessageLength+'</td></tr>'
-			+'<tr><td></td><td height="40"><input id="messageSubmit" onclick="Message.send()" type="submit" value="'+Lang.Submit+'">'
+			var html = '<table border="0" class="send_massage"><tr><td width="60" >'+Lang.Subject+'</td>'
+			+'<td><input id="messageSubject" type="text" style="width:300px" maxlength="35"/></td></tr><tr><td>'+Lang.Content+'</td>'
+			+'<td><textarea id="messageContent" cols="47" rows="6" style="width:300px"></textarea><br />'+Lang.TipMessageLength+'</td></tr>'
+			+'<tr><td></td><td height="40"><input id="messageSubmit" onclick="Message.send()" type="submit" value="'+Lang.Submit+'" />'
 			+'&nbsp;&nbsp;<span id="messageTip"></span></td></tr></table>';
 			
 			$.dialog.box('login', Lang.sendMessage + Lang.To + ' ' +username, html);
@@ -335,4 +335,4 @@ var Message = {
 			}
 		});
 	}
-}</1||>
+}

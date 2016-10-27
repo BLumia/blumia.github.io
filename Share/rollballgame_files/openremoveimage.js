@@ -23,7 +23,23 @@ function openremoveimage(E){
 $(document).ready(function(){
 	var a, imgs = document.images, url;
 	//遍历所有图片
-	for(i=0; i<imgs.length; 0="" 201002="" i++){="" url="$(imgs[i]).attr('src');//得到图片的" src="" 属性="" if(!url)="" continue;="" a="$(imgs[i]).parent("a");" 如果是http开头并且包含符合="" uploads="" ****.jpg="" 的命名规则，则需要进行修复链接的href地址="" if="" (url.indexof('http:')="=" &&="" uploads\="" (?:\d{6}|hdpic)\="" \w+\.(?:jpg|gif|png)$="" i.test(url)){="" +url.split('uploads')[1];="" 这种情况应该是图片使用完整路径保存，但是更换来域名="" 图片应该无法显示，对图片地址进行修复="" (imgs[i].src="" !="url)" imgs[i].src="url;" 如果图片有链接="" (a.size()="=" 1){="" url.indexof('uploads')=""> 0){
+	for(i=0; i<imgs.length; i++){
+		url = $(imgs[i]).attr('src');//得到图片的 src 属性
+		if(!url) continue;
+		a = $(imgs[i]).parent("a");
+		
+		//如果是http开头并且包含符合 uploads/201002/****.jpg 的命名规则，则需要进行修复链接的href地址
+		//if (url.indexOf('http:') == 0 && /uploads\/(?:\d{6}|hdpic)\/\w+\.(?:jpg|gif|png)$/i.test(url)){
+		//	//url = 'uploads'+url.split('uploads')[1];
+		//	
+		//	//这种情况应该是图片使用完整路径保存，但是更换来域名
+		//	//图片应该无法显示，对图片地址进行修复
+		//	if (imgs[i].src != url) imgs[i].src = url;
+		//	
+		//	//如果图片有链接
+		//	if (a.size() == 1){
+		//		url = a.attr('href');
+		//		if (url.indexOf('http:') == 0 && url.indexOf('uploads') > 0){
 		//			//url = 'uploads'+url.split('uploads')[1];
 		//			a.attr('href', url);
 		//		}
@@ -36,4 +52,4 @@ $(document).ready(function(){
 			});
 		}
 	}
-});</imgs.length;>
+});
