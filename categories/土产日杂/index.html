@@ -1,4 +1,54 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="BLumia's Dairy Wrapzone" type="application/atom+xml"><link rel="icon" href="/favicon.png"><script src="/easteregg/hi.js"></script><title>土产日杂 - BLumia's Dairy Wrapzone</title><link rel="stylesheet" href="/css/main.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--></head><body><div class="page-background"><div id="triangles-4" class="triangles"></div><div id="triangles-5" class="triangles"></div><div id="triangles-6" class="triangles"></div><div id="gradient-overlay-2"></div></div><header class="head"><nav id="nav-menu" class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li><li class="head-nav__item"><a href="/Creative" class="head-nav__link">Creative</a></li><li class="head-nav__item"><a href="/About" class="head-nav__link">About</a></li></ul></nav><h1 class="head-title"><a href="/">BLumia's Dairy Wrapzone</a></h1><h2 class="sub-title">Is that BLumia's Darkness World before?</h2></header><main class="main"><article class="post"><header class="post__head"><time datetime="2016-06-11T17:18:46.000Z" class="post__time">June 12, 2016</time><h1 class="post__title"><a href="/2016/06/12/160611-日杂小记/">日杂小记</a></h1></header><div class="post__main echo"><p>#日杂小记</p>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="alternative" href="/atom.xml" title="BLumia's Dairy Wrapzone" type="application/atom+xml"><link rel="icon" href="/favicon.png"><script src="/easteregg/hi.js"></script><title>土产日杂 - BLumia's Dairy Wrapzone</title><link rel="stylesheet" href="/css/main.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--></head><body><div class="page-background"><div id="triangles-4" class="triangles"></div><div id="triangles-5" class="triangles"></div><div id="triangles-6" class="triangles"></div><div id="gradient-overlay-2"></div></div><header class="head"><nav id="nav-menu" class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a href="/" class="head-nav__link">Home</a></li><li class="head-nav__item"><a href="/archives" class="head-nav__link">Archives</a></li><li class="head-nav__item"><a href="/Creative" class="head-nav__link">Creative</a></li><li class="head-nav__item"><a href="/About" class="head-nav__link">About</a></li></ul></nav><h1 class="head-title"><a href="/">BLumia's Dairy Wrapzone</a></h1><h2 class="sub-title">Is that BLumia's Darkness World before?</h2></header><main class="main"><article class="post"><header class="post__head"><time datetime="2016-11-16T17:14:24.000Z" class="post__time">November 17, 2016</time><h1 class="post__title"><a href="/2016/11/17/talk-begin-with-bloj/">一些事情 - 从OJ开发谈起</a></h1></header><div class="post__main echo"><h2 id="杂话">杂话</h2><p>BLumiaOJ 这个repo被我闲置了大概有快一年了吧，现在因为一些事情不得不拾起来这个repo，于是打算谈一下相关的事情，当然，不止会谈OJ本身，也会叙叙事，所以这篇依然算是一篇杂记吧。</p>
+<h2 id="为何打算做BLumiaOJ">为何打算做BLumiaOJ</h2><p>所有计算机专业的基础课必定是C语言或者C++吧，我们学校也不例外，选择了C语言作为编程基础的入门课，共两个学期[1]，伴随整个大一。略微奇怪的是，我们学校似乎意外的重视ACM/ICPC比赛，整个院上下都在鼓励参加ACM，这本身不是坏事，甚至是非常好的事情，但这个重视似乎有点过头，因为这种重视已经导致整个C语言课程都变得环绕算法题和刷OJ展开了，对，这就用着OJ了。</p>
+<p>我称之奇怪的原因是，我个人认为，并不是所有人都愿意走ACM这条路，事实上也并不是所有人想走都能走成的，如此的话，贯彻整个大一的OJ平台为核心的教学绝对会枯燥的让人不几天就失去兴趣，并认为C语言只是个用来刷题的无聊玩意儿而已。</p>
+<p>当时正巧在接触php，了解到学校使用的hustoj正是php写的之后，我就开始读它的代码了。hustoj本身并没有非常复杂的代码结构和逻辑关系，于是我很快就了解了hustoj的代码结构，并开始做一些小的修改（最初只是改了改界面和加了一个非常无关紧要的功能）。</p>
+<p>因为上面我提到的，我认为学校拿着存粹的为了算法竞赛而生的OJ去不加调整的做教学使用，必然存在很多的问题，而让学校或者老师改变教学策略基本是不可能的，于是我认为，如果OJ能够具备一些引导性的工作，应该是可以缓解一些问题的严重性的。</p>
+<p>于是我当时参考了诸多OJ，以及一些在线教学平台（计蒜客之类），感觉方案的确可行，想了想我可以以此为动力学html，php，js，css，sql什么的一堆东西，于是就决定开了这个坑。</p>
+<a id="more"></a>
+<h2 id="为何不修改现有的而是决定重写">为何不修改现有的而是决定重写</h2><p>最初的确尝试改hustoj，但很快发现，这套代码真要改起来并不是那么简单，一些功能有着换花样一般的实现，大量相互耦合的逻辑，因为hustoj开发时期早，现在一些被遗弃的东西要改就是牵一发动全身，甚至我改的时候一些逻辑读起来也不是非常方便（好多地方缩进都没…），这成大概是我决定重写BLumiaOJ的原因之一了。[2]</p>
+<p>除了修改困难外，也是更根本的原因[3]，就是我当时认为我要添加的新功能还是重写比较合适，比如知识结构网，问题标签，教学资源与题目的关系关联整合，好友挑战之类。我当时觉得这些东西的工作量也许不小，所以觉得改人家的劳神费力不如重写。</p>
+<p>不过如果较真的说，只是觉得看着不舒服又想加功能根本不足及成为一个说得过去的理由。我其实一直有一个我自己也不知道为什么会这么想的想法——在我的能力范围内尽可能的帮助更多的人[4]——或许是因为我自己的弯子走多了不希望别人走，或者一种奇怪的感觉觉得我就应该这样做吧。也大概也是因为这种想法，我对教育质量改善一直有着比较奇怪的兴趣，有时的确会研究怎么教可以让受众更好的掌握一些知识，这也算帮助了一些人吧。这个或许让别人看会觉得很难以理解，但是这点的确也是除了“帮我学很多东西”之外的又一原动力。</p>
+<p>当然还有一个原因是我单方面单纯的不喜欢GPL。当然这点蛮有趣的，下面还会提到。</p>
+<p>如果还要说有点别的的话，这算为学校做了点微小的工作吧。</p>
+<h2 id="打算怎么做">打算怎么做</h2><p>按照当时的脑洞，我列了这么个清单：</p>
+<ul>
+<li>代码便签盒 （学生的作业有哪里不明白？直接通过便签盒分享代码吧~）</li>
+<li>竞赛模式和作业模式 </li>
+<li>题目分类</li>
+<li>探索模式 （渐进的难度，引导对算法更深入的探索）</li>
+<li>ProblemAwesome （新的开放题库和题库模式）</li>
+<li>Open API 接口 （更自由，更开放）</li>
+<li>支持由HustOJ的数据导入 （相近的数据库结构，不必担心题目不足或是信息丢失）</li>
+</ul>
+<p>便签盒是个非常小的目标，因为当时教学时学生经常有下课也没来得及写完的代码，有个地方放还是比较科学的，当时我用paste.ubuntu，感觉挺方便，于是觉得这个功能可以整合进来。不过实现的话，其实就是不编译的代码提交而已，非常容易实现，于是这算是当时定的非常小的目标了。</p>
+<p>竞赛和作业分开的原因也很简单，因为学校没有分开，于是课上学生的提交也是按着竞赛这套规则来的，我个人认为普通入门学生不应该一开始就关心算法的复杂度，严格的格式化输出之类对于入门而言蛋疼至极的问题，以及错误提交的罚时问题（就上个课罚时什么罚时…）之类。于是我认为这个应该分开。实现的话并没有什么麻烦的地方。</p>
+<p>题目分类则是给acm队员用的。因为我的确以校赛上还算不错的成绩入了acm队，刷题时觉得我经常找不到某个对应知识点的相关题目，于是感觉这个功能应该很有用，以及这个功能对于非算法竞赛学生也会用得到，于是这点感觉还是挺有用的。</p>
+<p>探索模式是我看极客学院[5]的时候想的，极客学院有提供一个学习路线图，我觉得，对于自学某个东西的情况，路线图是个非常有用的东西[6]，我虽然可以从教程，书上看到学习的顺序，但都不如整合的路线图来的快，一个好的知识网图的确能节省很多时间，如果能和OJ整合（比如问题关联知识点）的话大概也不错。</p>
+<p>剩余就是一些我认为hustoj做的不好的东西了，当时听说过ajax于是觉得用这个会更科学，于是打算搞API，以及问题导出格式也搞个科学些的什么的。至于hustoj兼容，这是刚需，如果不做，学校百分之百不会用我的东西的，原因很简单，这个坑是我自己挖的，也不是学校要求我做的，我当时只是有学校OJ的维护权限，换了我的东西，旧数据全没了学校还不得把我杀了（x）…</p>
+<p>当然我也没想到学校会打算做二次开发和商业化…</p>
+<h2 id="怎么看待之前的代码和弃坑">怎么看待之前的代码和弃坑</h2><p>坑是我开的，除了我偶然跟别人谈起我有在写OJ之外，大多人都不知道有这么回事，当然，我也给学校提起过我有在写新OJ，但是没说原因，我向学校提起的原因是…学校有人说我看着是维护OJ但是看上去什么都没干…当然我提起新OJ也没人过多留意。</p>
+<p>OJ写初，连着写了有一段时间，结构上也和原版的hustoj非常接近[7]，写了一段时间后，后台内容和普通用户提交问题判题这些功能基本就全了，于是我在我的服务器上部署了hustoj并把我的代码也放上去，可以对比使用了。当然，竞赛部分并没有写，只是写了页面大致的样子，功能并没有，虽说后来也写了一点。</p>
+<p>个人习惯而言，几乎不可能把一长段的时间完全拿给某一个东西用，因为毕竟学生，我还要学新的东西，要不然出了校门都找不到工作的，于是我做OJ的同期还有学别的新东西。</p>
+<p>于是我就了解到了更多更科学的东西，安全问题啦（这个很重要），MVC框架啦，RESTful API啦，Vue.js啦，前后端分离啦，更多语言支持啦，判题后端更科学的做法啦等等。了解的越多，我开始愈发觉得我写的东西并不比原版好到哪里去，于是我自己都开始质疑我写这些东西的意义..</p>
+<p>后来我还在github看到，原版hustoj的确也有人重写过，有个叫做freefcw的人使用了一个php的MVC框架重写了hustoj的前端，于是我甚至打算不在继续我的OJ开发了，一是我本身就是完全重写，到当时那个程度都不能做到完全替换原版功能使用，二是安全问题我也不清楚我处理的是不是还过得去…于是我试着部署了freefcw的重写版本，但是因为自己本身没接触过php的MVC框架，遇到一些问题，解决后又有各种新问题，解决了一天也没正常跑起来，最终放弃部署。</p>
+<p>关于怎么看我写的代码，学习的过程中不断学到新的方法，与此同时我就一直在“否定”（暂且这么叫）我之前的做法，比如意大利面一般的代码结构，不变维护，前后端依然不分离，压根没法做api来看待的api之类..几乎可以认为，新的知识一直在让我认为我的旧代码没有意义，大概是这样的吧。</p>
+<p>于是，我开始认为继续写当前版本的OJ不会让我学到更多的东西，并且剩下的都是一些重复的繁杂工作，加之本身并没有谁要求我或者需要我去写这套东西，于是失去动力之后，加之更多新东西要学，我就暂缓，直到最终暂停了BLOJ的开发，并打算等闲了再用更科学的方法写吧…</p>
+<p>谈起商业化和学校的二次开发</p>
+<p>上面也说了，本身这就是我众多坑中的一个，只不过坑的半径（x）比较大而已，目的本身就是学习，并且我也本身就有可能会做不完以及做的肯定不好的心理准备。当时最高的期望就是功能完备，学校可以采用，得到好评并且的确改善了一部分教学方面的缺陷。如是我就很满足了，这样的初衷，谈何商业化？</p>
+<p>至于选GPL，单纯的是因为我觉得GPL的传染性蛋疼一些，然后我觉得也不大有可能有人拿着我的代码去搞大新闻，于是选了MIT协议，署我名，别的你随便。即便如此我依然用了hustoj的一些代码，因为目前毕竟半成品，成品的时候肯定还要做一次Clean Room的，而成品之前，还是怎么快怎么来比较好。以及我觉得，就我这质量，真要商业化了，估计代码早就改的我自个儿都不认识了…</p>
+<p>我真的没想到过学校会打算搞商业化…</p>
+<p>即便我自己本身没打算搞任何商业化方面的东西，但其实我个人不反对商业化一个这样的平台，毕竟hustoj自己也做 PaaS（大概算吧，为不会搞OJ的学校提供付费支持的OJ平台），但听到学校说要搞商业化之后我还是有点意外，因为，不知道哪里的感觉，我觉得商业化会让教学平台更加变味。</p>
+<p>我觉得大概我个人性格一直比较执拗吧，我一直都尽可能的保证我做的事情正确，不违背初衷。比如即便我非常清楚学校送我到北京的培训机构学j2ee是出于好意但我依然决定回来（去培训班是学不到什么有技术含量的东西的，以及我并不喜欢 java web 开发），以及学校说让我提前实习我也没有去（因为代价是不上课，而课程的确是我并不了解并且很有必要学习的）。我很清楚这样做会导致老师或者学校对我有负面看法，但我还是做了，因为我觉得，不违背初衷有更高的价值。而我认为，如果去做一个不是为了提高/改善教学质量的OJ平台，这完全违背了我的初衷。</p>
+<p>那么，为什么我觉得商业化会让教学平台变味？我也不清楚，但大概算一种直觉吧。比如C语言教学，学校一直是以ACM形式教学的，而普遍有一种观点（我也觉得有道理）是，弱校ACM出成绩快，给学院带来荣誉也就快一些了。如果这个观点成立，那么可以说这样教学本身是一种非常功利的做法，为了出成绩而教学，自然不会有非常高的质量的吧。</p>
+<p>当然，这只是一个非常没有由来的猜测，但不管从哪个方面看，我都觉得学校很多地方都很功利，比如几乎所有实验室（ACM实验室或许真的是个例外）都是校企合作，商业驱动的，而没有存粹的研究性实验室。以及大三学生被建议前往北京培训机构学习，以及大四（现已毕业）的学生曾经在校做项目的实验室外面挂牌写了达内….我并不能确保我的猜测是正确的，也没准是因为学校刚升本没几年还有待发展呢？</p>
+<p>学校说要做二次开发，到现在我依然是待定是否要做的状态的。如果学校真的要做我肯定会帮忙，但不见得就一定会全身心投入去做二次开发。原因也很功利，做这个项目的人大多是全职可以专心做这些事情的，而我还是个学生，而且很快面临着找工作或考研的选择。全身心的投入必然会影响学习任何东西。</p>
+<p>于是我最终告诉学校我的想法，首先是使用我的代码是否有意义和风险（维护成本上等）以及代价有多高（依然是只维护成本上），是否有必要按照科学的方法重写以及我的一些想法等。事实上我并不是非常建议直接使用我现在的代码（因为完成度不高，维护成本却很高），而无论用与不用，都是学校说了算的。</p>
+<p>但是，无论如何，在没有定数之前，我依然决定继续完成我现在版本的OJ，无论是否有人会使用。如果学校会用也好，学校会提供资金支持也好（虽然仅就OJ开发而言从来没指望过），或者完全不用也好，我试图传达给学校一个 我希望教学质量变得更好 的想法吧。</p>
+<p>似乎有点跑题了，写到现在这个点也有点脑子糊涂，那么就先到这儿吧，如有别的相关有必要补充我再补好了。</p>
+<p>顺便立个flag，如果年初我开时间囊之前能换安卓机，我就开篇博客好好的黑衣黑Windows Phone。</p>
+<p>惯例，时间：2016年11月17日01:06:53。</p>
+<p>[1]大概一本院校或者好些的别的院校都是一个学期吧，我所听闻的范围内除了我校，都是一个学期。<br>[2]当时并没有想太多，于是现在我看我当时写的代码的时候觉得我当时的想法和原版一样幼稚..<br>[3]让我在这个过程中学到东西是作为动力的，说起来，我经常为了学某个东西去开一个相关方面的坑。当然，动力归动力，原因归原因，开坑肯定有“学东西”之外的原因，不然的话我还不如接着魔改，改烦了扔着不管了就是了。<br>[4]我这种想法也算是我做一些事情的动力。比如我高中很想做一个帮助高中生被化学方程式的平台或者工具（最后没做），大学后曾想做一个分享我觉得好的东西的平台（一开始做成了静态网页，后来试着用django做了现在的“Awesome”分享我觉得好的游戏，软件以及资源链接。顺便这个平台也没完工且被晾着…）<br>[5]学一些东西的时候当时有看过一小段的这个网站，后来也还看过一段时间的lynda，再后来就只看文档，推荐书籍和普遍认为值得阅读的文字教程了。<br>[6]至今这么认为，比如我至今没找到一个明确的符合我的目的的适合业余学习的绘画路线图….<br>[7]事实上我算是读hustoj代码入门的php吧，也算野路子了，自然有很大影响。虽然我到现在都认为我所看到的那个hustoj的代码很烂，但至少还是很感激有hustoj的代码看的。</p>
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/土产日杂/" class="post__tag__link">土产日杂</a></li></ul><a href="/2016/11/17/talk-begin-with-bloj/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2016-06-11T17:18:46.000Z" class="post__time">June 12, 2016</time><h1 class="post__title"><a href="/2016/06/12/160611-日杂小记/">日杂小记</a></h1></header><div class="post__main echo"><p>#日杂小记</p>
 <p>好久没更过这个日记博客了。其实前些时候打算更来着，那时候vscode还没出正式版但是我用着vscode写markdown觉得很爽，结果vscode就给我使了个小性子，把我写了那么长的一篇东西以及我的几个写外包的代码给搞成乱码了（里面还参着点node.js异常）。说起来我还真是头一次见编辑器把编辑的文本搞坏还不带副本的…这是逼我给杂集也用上git么= =<br><a id="more"></a><br>今天翻知乎看到个问题说用div写个布局得多久，看到有答主说用flex大法能十几分钟就搞定题主的要求，于是今天接触了一下flexbox并重写了那个万年没动过的主页（其实是导航页），于是顺着就想到了blog都好久没动过了。今天大致更一下。不过说起来，这段时间的变化蛮大的。</p>
 <h2 id="关于退出acm队的事情">关于退出acm队的事情</h2><p>目前而言对我来说影响最大的也就是退出acm队了吧。其实我本来按照原本的打算来说，我是等打过下次的区域赛后才打算退的，可是机房那边今年开始的时候我们14级的acm队员就只剩下7个人了，一队的话是三人，那7 mod 3 == 1…..人数上就很尴尬了。但是为何那个1是我呢….</p>
 <p>我入acm队，大一，acm队有着来自主任许可的翘课权。大一的课程，网页制作，c语言基础，计算机概论（特别简单），于是我敢说我这些课即便不听我也会，于是我遍从了，跟着其他队员一起，去机房刷题学算法，也不担心我会挂科。另外的，按照我之前的习惯，我经常会在闲暇时间搞自己的一些小软件之类的东西，而机房的很多人虽然觉得这有些厉害但是依然觉得我搞这些会耽误我刷题学算法。大二后，课程内容我逐渐变得不是那么熟悉了，于是我选择去上课而不是翘课去机房刷题，于是我去机房的时间直接减少了很多，加上我喜欢自己搞一些东西，于是被机房的其他同学认为我不务正业不想刷题了。于是最近有次轻院的校赛组队，我原本的队友直接找了另一个同学做了队友，我就成了余的那个一，最终只得和15级的新生一起组队打那场比赛。</p>
@@ -97,24 +147,7 @@
 <p>冰桶挑战弘扬的是一种正能量，而头上浇冷水只是冰桶挑战的一种弘扬方式罢了，为什么要否定呢？我们还可以参考这个新闻：“<a href="http://news.sina.com.cn/w/p/2014-08-26/104030744504.shtml" target="_blank" rel="external">美加州干旱“冰桶挑战”变“沙桶挑战”</a>”。可见，冰桶挑战变身沙桶挑战，这也是对公益的尊重。我们可以用无数种方式去尊重公益，只要我们想去做。而公益活动，需要的也是我们的支持。</p>
 <p>啊对了，顺便，没有人点名让我参与这个活动，即便点了我大概也无力去捐助。我前天洗澡的时候用的是冷水，就当我参与冰桶挑战了吧。</p>
 <p>关键词草稿：参与感，传播方式，参与心态（又是心态…），公益对战公益</p>
-</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/土产日杂/" class="post__tag__link">土产日杂</a></li></ul><a href="/2014/08/29/冰桶挑战是不是在浪费水/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article><article class="post"><header class="post__head"><time datetime="2014-08-23T08:51:59.000Z" class="post__time">August 23, 2014</time><h1 class="post__title"><a href="/2014/08/23/凶残的近期日常/">凶残的近期日常</a></h1></header><div class="post__main echo"><p>于是由于近期的事情略多，于是先记下来条目[x1]看了看，还真是凶残啊。那么，一一记录一下吧。</p>
-<a id="more"></a>
-<p>首先是凶残的同学会，毕竟高中毕业大家都要分开[x2]，并且班长（刘xs）也早就说要准备办同学聚会，于是，定于昨天，举办了同学聚会，项目是吃饭和ktv。于是在定好地点和预备金额（30软妹币/人）的前提下，我们都完成集合并到达了一家餐厅。之后就开始吃饭说话。</p>
-<p>说实话，这次吃饭的场面和预想的并不太一样，预想是和这个月刚刚过去的奶奶的生日宴差不多，一个大一些的包房和一个能容纳30甚至40人的大桌子（比较大的桌子挤一挤就好，生日宴的那次的桌子就差不多足够大），结果实际是在一个小一些的包间挤两个比较小的桌子（虽说的确也坐的下）。就此而言，我感觉准备似乎不是很充分。男生一桌，女生和所谓不能喝酒的男生一桌（我在这里），多少有些不合适嘛…不过家长评价说，我们还小，这种事情没经验，所以会这样。</p>
-<p>另外的事情就是吃饭时发生的了。我意外的发现其实很多男生都吸烟而不吸烟的占了极少数（我，还有个别几个）。而那些爷们儿们便在开始时就说“今天谁也别站着出去（即普通话不醉不归）”，于是能喝的不能喝的都开始喝白酒（男生桌喝的很厉害，我们那一桌最多只是一点啤酒，不得已我是男生所以我也喝了半听啤酒）。似乎是理所当然的，有人开始醉了，甚至借着酒劲开始发挥了。比如….谢fx，喝醉后，拿着半杯的白酒到我跟前说是让我干了（ps.我不能喝酒，也不会喝酒）。我难为的抿了一口后难为情的放到桌子上并表示我不能喝酒。而这怎么可能可以让一个喝醉的人满意？幸好我放置杯子的地方有我倒好的一杯雪碧，于是我干了那杯子雪碧[x3]。。。还好成功混过去了。</p>
-<p>后来我们去了ktv，烂醉的谢fx还没刚刚下（电动）车就坐地上了。当然，ktv内也借着酒劲出了像…好在依然有跟筋是正常的谢fx没有忘记我们说好的提前返回的话，于是他中途提出回家，由于是他骑车带我去的饭馆，于是我理所应当的要带他回去。于是我们得以回家，当然，他还是醉了[x4]。。。事后的教训是，如果再碰到这种所谓饭局，想要避免喝酒的事情，就尽量连啤酒也别沾。另外，我可能需要更多的去面对一些社会化的事情（比如有人喝酒吸烟ktv之类我应该如何应对什么的，当然，不会超出我的准则，比如我不会去吸烟之类）（以上全部内容写于140823）</p>
-<p>[caption id=”attachment_122” align=”aligncenter” width=”300”]<a href="http://blog.blumia.cn/?attachment_id=122" rel="external" target="_blank"><img class="size-medium wp-image-122" title="截图-MBP在线-多人竞技场比赛" src="http://blogblumia-wordpress.stor.sinaapp.com/uploads/2014/08/cc-300x235.jpg" alt="截图-MBP在线-多人竞技场比赛" width="300" height="235"></a> 截图-MBP在线-多人竞技场比赛[/caption]</p>
-<p>接下来说一下凶残的MBPOL。如何凶残，看上图就知道了。5分钟的竞技时间我只拿到了7个钻石。甚是凶残…不过说起来，我本身也不是高手，虽然是hr的开发者/Leader不过并不是mbg的专家级别玩家。人家毕竟甚至有世界纪录级别的人了。这样来说，至少自己能感觉好一些。。。额。。。</p>
-<p>不过如此来说，根据日常所见的推广一下，记录党通常都是很凶残的，而通常，多人模式玩家多半是为了记录而多人的。。。也就顺理成章——多人模式是记录党的聚集地了（比如。。各种游戏提供onlineLeaderboard，osu!的神触奋力刷排名，甚至同学在玩的梦三也是如此）。于是大概小白们就不太适合入这种大神云集的地方吧，当然这个理论并不正确（新手区之类可以否定这个理论）甚至连普遍性（不是所有游戏都符合上述内容的扯淡）都没有。</p>
-<p>另外有个比较奇怪的发现是似乎记录党的脾气都很倔（个人观点），比如b吧的四中和th吧的mmw。于是大概我可以理解为，记录党的本体就是记录，而当本体被轻视的时候，他们就会反击吧。当然，这个理解方式似乎也不对，不再深究。</p>
-<p>另外的事情就是一些日常了。比如我在医院打发时间所用的新标日电子书竟然需要激活码而激活码是今年8月出的第二版才有附带。后来发邮件给人教出版社，然后又转电子书软件的反馈处，最终才要到一份正版激活码。另外是关于大学补助的事情，毕竟家境不宽裕，所以有补助的话自然会很高兴，而近期往返于民政局和街道办等地却无论如何都没答复（有个大专生都申请到了3k的补助），于是似乎这事情没响了。不过还好学校（高中）那边似乎也有补助，今天早上我去了，填了个表。似乎会有的。</p>
-<p>至于即将到来的开学，我目前是很期待的。昨天看到一个说说，说什么大学之后都会有一个对学校/大学生活失望的过程。我希望这事情不是普遍的。顺便，火车票买上了。还有，刚刚去买箱子（拉杆箱）回来，又长了些见识，不只是关于还价的方式的，还有一些别的社交方式的内容。这个不太好描述，于是不记录了。</p>
-<p>目前也想不起来还有别的什么需要记录的了。就是这样。（140823）</p>
-<p>[x1]草稿区：要记的事情有点多，先列一下：1.凶残的MBPOL 2.凶残的同学会 3.凶残的pep 4.凶残的街道办 5.即将到来的开学 6.日常</p>
-<p>[x2]实际上据同学会去餐馆出发前的交流以及之前的交流中可以了解到大多数人都到了郑州上大学/大专，甚至好几个是在同一个大专里。</p>
-<p>[x3]事后我爸说“遇到那种（喝醉的人劝酒）情况可以拿一杯白水当酒干了，喝醉的看不出来，这种方法很好使”这样。于是我似乎无意间使用了这种方法。</p>
-<p>[x4]有几个他喝醉时在ktv唱歌的视频片断，不甚方便所以不传了，参见我自己的九木集文件夹。</p>
-</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/土产日杂/" class="post__tag__link">土产日杂</a></li></ul><a href="/2014/08/23/凶残的近期日常/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016 <a onclick='high();'>BLumia</a></div><menu class="page-menu u-fr"><li class="page-menu__item"><span title="Previous" class="page-menu__link icon-arrow-left page-menu__link--disabled"></span></li><li class="page-menu__item"><a title="Next" href="/categories/土产日杂/page/2/" class="page-menu__link icon-arrow-right"></a></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
+</div><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a href="/tags/土产日杂/" class="post__tag__link">土产日杂</a></li></ul><a href="/2014/08/29/冰桶挑战是不是在浪费水/#disqus_thread" class="post__foot-link u-fr">0 COMMENTS</a></footer></article></main><footer class="foot"><div class="foot-copy u-fl">&copy; 2016 <a onclick='high();'>BLumia</a></div><menu class="page-menu u-fr"><li class="page-menu__item"><span title="Previous" class="page-menu__link icon-arrow-left page-menu__link--disabled"></span></li><li class="page-menu__item"><a title="Next" href="/categories/土产日杂/page/2/" class="page-menu__link icon-arrow-right"></a></li></menu></footer><script>(function(h,g,l,k,j,i){j=h.createElement(g),i=h.getElementsByTagName(g)[0],
 j.src="//"+l+".disqus.com/"+k+".js",i.parentNode.insertBefore(j,i)})
 (document,"script","blogblumia","count");
 </script></body></html>
