@@ -9,10 +9,10 @@
 <li>创建项目，【指令<code>cocos new hello（项目名称） -p com.jin.hello（包名字） -l cpp（项目类型） -d F:\MyWork\cocos2dx_workspace（项目存放路径）</code>】，项目路径为相对路径也不会有问题</li>
 <li>cd到项目目录 例 F:\MyWork\cocos2dx_workspace\hello，根据需要，执行：<br> 1. 编译到android平台【键入<code>cocos run -p android</code>】<br> 2. 编译到win32平台【键入<code>cocos run -p win32</code>】<br> 3. 编译到ios平台【键入<code>cocos run -p ios</code>】 <em>需要在MacOSX环境下</em><br> 执行完毕（需要有vs2012+）后会生成项目文件（自动build一个helloworld）。</li>
 </ul>
-<p><img src="http://blogblumia-typecho.stor.sinaapp.com/usr/uploads/2015/07/1032629919.png" alt="创建项目的指令"></p>
-<h3 id="编写体验">编写体验</h3><p>Helloworld的创建整个过程其实没费多大功夫，异常的顺利。虽然编译过程中看到了一堆警告，不过还好能用。编译完成就会看到自动执行的helloworld了。此后需要编写代码的时候，用VS开sln就行了。<br><img src="http://blogblumia-typecho.stor.sinaapp.com/usr/uploads/2015/07/3624181139.png" alt="HelloWorld"></p>
+<p><img src="http:/blumia.github.io/media/cocos_install.png" alt="创建项目的指令"></p>
+<h3 id="编写体验">编写体验</h3><p>Helloworld的创建整个过程其实没费多大功夫，异常的顺利。虽然编译过程中看到了一堆警告，不过还好能用。编译完成就会看到自动执行的helloworld了。此后需要编写代码的时候，用VS开sln就行了。<br><img src="http:/blumia.github.io/media/cocos_hello.png" alt="HelloWorld"></p>
 <p>事实上VS写c艹简直就是如同吃了老坛酸菜面一般的酸爽(我不喜欢吃老坛酸菜面..)，于是我怀念起了我可爱的QtC..然后我就照着网上的教程一步一步的写。</p>
-<p>由于有过一点基础，还是可以理解大体思路的，不过毕竟之前没怎么用过，于是还是跟着教程一步一步来了。教程说一步，理解后试着自己写，然后再看看教程，再写，以此往复，最终完成了第一个测试游戏，也就是2048. 因为是学习产物，毕竟很依赖教程的，所以压根 <em>算不上</em> 是一个 <em>自己写的</em> 游戏。这个教程可以在<a href="http://cn.cocos2d-x.org/tutorial/lists?id=6" target="_blank" rel="external">这里</a>看到，顺便，文档在<a href="http://www.cocos.com/doc/" target="_blank" rel="external">这里</a><br><img src="http://blogblumia-typecho.stor.sinaapp.com/usr/uploads/2015/07/2253223092.png" alt="2048测试程序运行结果图"><br>痛苦的地方就在于，VS写cpp代码，真的不爽，没有QtC那么好用，后来61推荐了VAssistX，才还算不错了。以及，因为是刚接触，并不知道都有哪些类型哪些函数哪些宏什么的，没有科学的代码提示，也是不爽的地方了吧。不过还好有个api查着。</p>
+<p>由于有过一点基础，还是可以理解大体思路的，不过毕竟之前没怎么用过，于是还是跟着教程一步一步来了。教程说一步，理解后试着自己写，然后再看看教程，再写，以此往复，最终完成了第一个测试游戏，也就是2048. 因为是学习产物，毕竟很依赖教程的，所以压根 <em>算不上</em> 是一个 <em>自己写的</em> 游戏。这个教程可以在<a href="http://cn.cocos2d-x.org/tutorial/lists?id=6" target="_blank" rel="external">这里</a>看到，顺便，文档在<a href="http://www.cocos.com/doc/" target="_blank" rel="external">这里</a><br><img src="http:/blumia.github.io/media/cocos_2048.png" alt="2048测试程序运行结果图"><br>痛苦的地方就在于，VS写cpp代码，真的不爽，没有QtC那么好用，后来61推荐了VAssistX，才还算不错了。以及，因为是刚接触，并不知道都有哪些类型哪些函数哪些宏什么的，没有科学的代码提示，也是不爽的地方了吧。不过还好有个api查着。</p>
 <p>总体来说，cocos2dx的工作方式似乎和之前用过的Love2d和HGE不一样。cocos2d用了个奇怪的导演摄像机场景制度，总觉的有点奇怪。。Love2d和HGE的那种方式还是很习惯的。如何描述..我也不知道..毕竟是新手。</p>
 <p>过程中遇到的困难都是意料之中的，不过教程很详细，避免了一些问题，最大的问题就是初期得到处插api了。以及，知乎上得知，cocos2dx的3.7版本将整合lua和js到cocos2dx里，cocos2dx的3.7也就不远了。</p>
 <h3 id="体验后闲话">体验后闲话</h3><p>闲话均为吐槽..不必在意</p>
