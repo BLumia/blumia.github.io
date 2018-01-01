@@ -411,7 +411,11 @@ video {
   font-size: 18px;
   font-size: 1.125rem;
 }
-.echo h4,
+.echo h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+}
 .echo h5,
 .echo h6 {
   font-size: 14px;
@@ -769,6 +773,11 @@ video {
 .post__main h3 {
   font-size: 19.2px;
   font-size: 1.2rem;
+}
+.post__main h4 {
+  font-size: 16px;
+  font-size: 1rem;
+  font-weigth: bold;
 }
 .post__main blockquote {
   margin: 1.6em -60px;
