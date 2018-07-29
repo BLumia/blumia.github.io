@@ -1,2 +1,3 @@
 _site/*
 .saas-cache/*
+Gemfile.lock
