@@ -8,6 +8,7 @@ layout: page
  - Move some pages back to GitHub pages, old post archives are not included.
  - Update [Creative]({{ 'Creative.html' | relative_url }}) page, *Not My Projects* section.
  - Update [About]({{ 'about.html' | relative_url }}) page.
+ - Update some links between pages.
 
 #### 2018/5/20
 
