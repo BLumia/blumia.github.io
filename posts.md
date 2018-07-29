@@ -4,6 +4,5 @@
 
 layout: posts
 nav-title: Archives
-title: All your posts!
-subtitle: Your page's subtitle
+title: All the posts!
 ---
