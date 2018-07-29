@@ -65,10 +65,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.3)
   jekyll-feed (~> 0.9)
   jekyll-seo-tag (~> 2.1)
-  jekyll-theme-mutter
+  jekyll-theme-mutter (~> 0.3.0)
   tzinfo-data
 
 BUNDLED WITH
