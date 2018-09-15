@@ -1,6 +1,8 @@
 ---
 layout: page
 nav-title: Creative
+title: Creative
+subtitle: Check out what I created.
 ---
 {::options parse_block_html="true" /}
 Since I am interested in a lot of stuff like programming and music producing, I created lots of "Things" like my open source projects and my soundtracks / remixes (and maybe my artwork someday?). So here you can get a list of projects.
