@@ -3,6 +3,11 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/9/15
+
+ - Move some posts to GitHub pages.
+ - Change www.blumia.net CNAME record to GitHub pages.
+
 #### 2018/7/29
 
  - Move some pages back to GitHub pages, old post archives are not included.
