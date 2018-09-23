@@ -3,6 +3,10 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/9/23
+
+ - Continue moving posts to GitHub pages.
+
 #### 2018/9/15
 
  - Move some posts to GitHub pages.
