@@ -3,6 +3,11 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/9/29
+
+ - New post!
+ - Continue moving posts to GitHub pages.
+
 #### 2018/9/23
 
  - Continue moving posts to GitHub pages.
@@ -35,5 +40,5 @@ layout: page
 #### 2018/4/22
 
  - Now we got a changelog! Whooooooaaaaaa!
- - [Mutter](https://github.com/BLumia/Mutter) is now support html `<details>` / `<summary>` tags.
+ - [Mutter](https://github.com/BLumia/Mutter) now supports html `<details>` / `<summary>` tags.
  - Update [Creative]({{ 'Creative.html' | relative_url }}) page.
