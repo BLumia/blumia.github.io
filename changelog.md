@@ -3,6 +3,11 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/10/10
+
+ - Keep sync post to GitHub pages.
+ - Shutdown the server which serve `blumia.net` (without `www.` ) and `blog.blumia.net` (which do 301 redirect to the post list page on GitHub pages). `blog.blumia.net` will be avaliable soon since it's just a simple URI redirect. For `blumia.net`, no idea, until I got a new server for web service?
+
 #### 2018/9/29
 
  - New post!

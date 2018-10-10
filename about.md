@@ -2,6 +2,7 @@
 layout: page
 nav-title: About
 title: About
+subtitle: Something about me.
 ---
 
 BLumia (Gary Wang, for real), is a young programmer from China. With his hobby, he is still messing around, creating stuff in order to fill his empty soul. This site is also the result of what he is doing.
