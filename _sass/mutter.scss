@@ -21,6 +21,12 @@ body {
   width: 75%;
 }
 
+@media all and (max-width: 720px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+
 h1, h2, h3, h4 {
   line-height: 75px;
   font-size: 30px;

@@ -3,6 +3,10 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/10/14
+
+ - Minor css change.
+
 #### 2018/10/10
 
  - Keep sync post to GitHub pages.
