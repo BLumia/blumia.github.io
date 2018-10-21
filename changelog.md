@@ -3,6 +3,11 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/10/21
+
+ - New post!
+ - Continue moving posts to GitHub pages.
+
 #### 2018/10/14
 
  - Minor css change.
