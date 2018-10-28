@@ -20,7 +20,7 @@ console.log("plusOne.count = " + plusOne.count);
 console.log("window.count = " + window.count);
 ```
 
-我们知道 JavaScript 中所有的东西都是对象，那么很可能会把 `this` 自然的理解成当前对象“身上”的属性，对于上面的代码（注意，并非严格模式下），我们为 `plusOne` 创建了一个属性 `count` 并试图通过在 `plusOne()` 中使用 `this.count++` 改变它的值。然而如果实际执行这段代码（注：假设是在浏览器 F12 的 Console 中），得到的结果会是这样：
+我们知道 JavaScript 中 *几乎* 所有的东西都是对象，那么很可能会把 `this` 自然的理解成当前对象“身上”的属性，对于上面的代码（注意，并非严格模式下），我们为 `plusOne` 创建了一个属性 `count` 并试图通过在 `plusOne()` 中使用 `this.count++` 改变它的值。然而如果实际执行这段代码（注：假设是在浏览器 F12 的 Console 中），得到的结果会是这样：
 
 ``` plain
 plusOne get called, this.count: NaN
