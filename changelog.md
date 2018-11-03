@@ -3,6 +3,10 @@ title: Changelog
 layout: page
 ---
 
+#### 2018/11/03
+
+ - New post!
+
 #### 2018/10/21
 
  - New post!
