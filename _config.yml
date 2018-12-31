@@ -19,11 +19,21 @@ defaults: # leave some default front-matter for posts
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "garbage" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
 
+# Collections
+collections:
+  garbage:
+    output: true
+    permalink: /garbage/:name
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-mutter
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
