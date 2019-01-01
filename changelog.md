@@ -3,6 +3,15 @@ title: Changelog
 layout: page
 ---
 
+#### 2019/1/1
+
+ - Bump footer date to 2019
+ - Happy new year ;)
+
+#### 2018/12/31
+
+ - Garbage test.
+
 #### 2018/11/03
 
  - New post!
