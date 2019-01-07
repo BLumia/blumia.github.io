@@ -3,6 +3,11 @@ title: Changelog
 layout: page
 ---
 
+#### 2019/1/8
+
+ - Update Update [About]({{ 'about.html' | relative_url }}) page.
+ - New garbage.
+
 #### 2019/1/1
 
  - Bump footer date to 2019
