@@ -17,21 +17,15 @@ Most newer projects come with a license file, please refer to them for licensing
 
  - [QtCreator](https://www.qt.io/download-open-source/) My primary cross-platform RAD IDE.
  - [Visual Studio Community](https://www.visualstudio.com/vs/community/) Free IDE offered by Microsoft, for some of my project on Windows.
- - [Geany](https://www.geany.org/) and [Notepad++](https://notepad-plus-plus.org/) Writing script, PHP or some quick programming.
+ - [Kate](https://kate-editor.org/get-it/) and [Geany](https://www.geany.org/) Writing note, script, PHP or some quick programming.
  - [Visual Studio Code](https://code.visualstudio.com/) For my larger but not vary large project, and source browsing.
- - [Cygwin](https://www.cygwin.com/) Porting source to windows, or testing something without a ready-to-use linux enviroment.
- - [MSYS](http://www.mingw.org/wiki/MSYS) When working on Windows C/C++ projects.
+ - [MSYS2](https://www.msys2.org/) and [Craft](https://community.kde.org/Craft) When working on Windows C/C++ projects.
  - [Vim](http://www.vim.org/) ~~Edit config files~~ Help poor blumia in Uganda!
 
 ### Active Projects
 
-<details>
-<summary markdown="span">[BLumiaOJ](https://github.com/BLumia/BLumiaOJ) a HUSTOJ compatible, Online Judge system. ([online site](https://oj.blumia.cn/)).</summary>
+// TODO 19-12-09: update this page.
 
-This is a HUSTOJ compatible, Online Judge system's front-end. There is also an [online site](https://oj.blumia.cn/) for testing purpose.
-
-Actually I was planning to write a judge core to make it become a fully functional Online Judge system, but for now I think it's not necessary to reinvent the wheel. So please use HUSTOJ's judge core or write your own, refer to the repo and check out the README file for more details.
-</details>
 <details>
 <summary markdown="span">[Private Cloud Music](https://github.com/BLumia/Private-Cloud-Music) a really simple and easy to use online music player.</summary>
 
@@ -58,6 +52,15 @@ Co-op project with [Chris241097](https://github.com/chirs241097) .
 This is a TouHou BGM player for all platform, with directly support for Linux, tested under my laptop (running Arch linux and Windows 10) and chris' laptop (running Gentoo).
 
 Thanks to [thpacth/thtk](https://github.com/thpatch/thtk/), this player support all majer version (>=th07) of TouHou game. And it's possible to run under Mac but I can't test it since I never have a Mac computer.
+</details>
+<details>
+<summary markdown="span">[Pineapple Pictures](https://github.com/BLumia/PineapplePictures) a simple Tencent QQ style image viewer.</summary>
+
+This is a very casual project for my personal use, and it just works under both Windows and [Archlinux](https://aur.archlinux.org/packages/pineapple-pictures-git/).
+
+The reason of this project is just because the default image viewer under Windows cannot play gif animation and the UWP version of the new image viewer start so slow and it's too fat for me. Then when this project become usable, I found it also works fine under my Arch KDE desktop and feel it way more comfortable than using Gwenview.
+
+Since this project is not for people other than me at all, I still list it here in case someone may like it.
 </details>
 <details>
 <summary markdown="span">[Mutter](https://github.com/BLumia/Mutter) a lightweigth scaffold for blogging and creating web pages.</summary>
@@ -102,6 +105,13 @@ There is a blog post(Chinese) for this repo. [See here](https://www.cnblogs.com/
 
 Some of my projects are old or stopped for support for some reason, or just archived because there's no need for update. It may still works and maybe in someday I will probable pick up some projects.
 
+<details>
+<summary markdown="span">[BLumiaOJ](https://github.com/BLumia/BLumiaOJ) a HUSTOJ compatible, Online Judge system. ([online site](https://oj.blumia.cn/)).</summary>
+
+This is a HUSTOJ compatible, Online Judge system's front-end. There is also an [online site](https://oj.blumia.cn/) for testing purpose.
+
+Actually I was planning to write a judge core to make it become a fully functional Online Judge system, but for now I think it's not necessary to reinvent the wheel. So please use HUSTOJ's judge core or write your own, refer to the repo and check out the README file for more details.
+</details>
 <details>
 <summary markdown="span">[BLumia's Timidity Shell](https://github.com/BLumia/BLumiaTimidityShell) a Timidity / Timidity++ shell program.</summary>
 
@@ -158,7 +168,7 @@ There are also some project which is not mine but I taking part in the developme
 
 Deepin File Manager is the default file manager app for Deepin Desktop Enviroment. I taking part in refacting code for some componments like the left sidebar and the top crumb bar / address bar, and also did some bugfix.
 
-Actually I am working in Deepin Inc. and that's what I am working on. I also working on some other projects which is also a part of Deepin Desktop Enviroment, but what I have done is mainly focus on the file manager app so I just list this one here.
+Actually I am working in Deepin Inc. and that's what I am mainly working on. I also working on some other projects which is also a part of Deepin Desktop Enviroment, but what I have done is mainly focus on the file manager app so I just list this one here.
 </details>
 
 <details>
@@ -174,7 +184,7 @@ Fidel Dungeon Rescue is a fast-paced puzzle crawler game. I helped do beta testi
 <details>
 <summary markdown="span">[QMidiPlayer](https://chrisoft.org/QMidiPlayer) and [SMELT](https://github.com/BearKidsTeam/SMELT) MIDI player and hardware-accelerated OpenGL wrapper by Chris241097.</summary>
 
-These project created by Chris241097 is quite awesome, I did taking part in but just really a little work, few lines of code. I write these project into this because I hope I can contribute to the project in upcoming future.
+These project created by Chris241097 is quite awesome, ~~I did taking part in but just really a little work, few lines of code~~ (no longer true since my crappy code get removed during updates, but I'll still leave this project here since it's very good, and-). I write these project into this because I hope I can contribute to the project in upcoming future.
 </details>
 <details>
 <summary markdown="span">[LearnOpenGL-CN](https://github.com/LearnOpenGL-CN/LearnOpenGL-CN) Chinese translation of [LearnOpenGL site](https://learnopengl.com/).</summary>
