@@ -57,18 +57,18 @@ css-style: >
 			<i class="bl-icon i i-good"></i>
 		</a>
 	</div>
-	<div onmouseover="updateSubTitle('Online Judge for ACM/ICPC')" class="bl-item flex item-justify-center">
+	<!--div onmouseover="updateSubTitle('Online Judge for ACM/ICPC')" class="bl-item flex item-justify-center">
 		<a href="https://oj.blumia.cn/">
 			<i class="bl-icon i i-code-braces"></i>
 		</a>
-	</div>
+	</div-->
 	<div onmouseover="updateSubTitle('TouHou Player')" class="bl-item flex item-justify-center">
 		<a href="https://bearkidsteam.github.io/thplayer/">
 			<i class="bl-icon i i-thplayer"></i>
 		</a>
 	</div>
 	<div onmouseover="updateSubTitle('The Witness Solver')" class="bl-item flex item-justify-center">
-		<a href="https://blumia.net/TheWitnessSolver/">
+		<a href="https://www.blumia.net/TheWitnessSolver/">
 			<i class="bl-icon i i-puzzle"></i>
 		</a>
 	</div>
