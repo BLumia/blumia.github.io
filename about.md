@@ -46,7 +46,7 @@ No one can go without friends. -- chris241097
  - [为什么不问问神奇噗噗呢](https://ikirby.me/)
  - [鱿鱼的网站还是没有上https](http://lowsfish.com/)
  - jjy的页面不见了...
- - [嘤嘤宸椰页的博客需要强劲的 CPU 和 GPU 才能访问](https://yyc12345.github.io/MyBlog/)
+ - [嘤嘤宸椰页的博客](https://yyc12345.github.io/MyBlog/)
  - 曹同学你博客又挂了...
  - [oing的笔记本儿](https://oing9179.github.io/blog/)
  - [老板今天撩白菜了吗?](https://jxpxxzj.oschina.io/)
