@@ -44,7 +44,7 @@ No one can go without friends. -- chris241097
  - [不愿透露姓名的陈六一小姐的糖果屋](https://blog.61dpi.com/)
  - [Chris才不是琪露诺酱](https://chrisoft.org)
  - [为什么不问问神奇噗噗呢](https://ikirby.me/)
- - [鱿鱼的网站还是没有上https](http://lowsfish.com/)
+ - [鱿鱼鱿鱼游](https://lowsfish.com/)
  - jjy的页面不见了...
  - [嘤嘤宸椰页的博客](https://yyc12345.github.io/MyBlog/)
  - 曹同学你博客又挂了...
