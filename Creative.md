@@ -204,7 +204,7 @@ You can use my tracks with [CC BY-NC](https://creativecommons.org/licenses/by-nc
 
 #### DAWs
 
- - [FL Studio (Fruity Edition)](https://www.image-line.com/flstudio/) (There are NO audio import/record support in Fruity Edition)
+ - [FL Studio (Producer Edition)](https://www.image-line.com/flstudio/) (w/o any extra plugins not included in the Producer Edition)
  - [Cakewalk SONAR Platinum](http://www.cakewalk.com/Products/SONAR) (Now it's named "[Cakewalk by BandLab](https://cakewalk.bandlab.com/)")
 
 I got quite a lot of DAWs for playing around, some are bought from sale, some are bundled with hardware like MIDI keyboard. The DAW I got but not using will not list here.
@@ -225,10 +225,10 @@ I got quite a lot of DAWs for playing around, some are bought from sale, some ar
 
 <details>
 <summary markdown="span">A wishlist...</summary>
+ - [KORG Collection 2 - M1](https://korg.shop/korg-collection-m1.html) (VSTi) (Known lowest price at $39.99)
  - [True Piano](http://www.truepianos.com/) (VSTi)
  - [Strum GS-2](https://www.applied-acoustics.com/strum-gs-2/) (VSTi)
  - [Roland Sound Canvas VA](https://www.roland.com/global/products/sound_canvas_va/) (VSTi)
- - [Valhalla Vintage Verb](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/) (VST)
 </details>
 
 I actually also use some other virtual instruments bundled with the current DAW which my project is using, they are not on this list because I just use them not very often.
