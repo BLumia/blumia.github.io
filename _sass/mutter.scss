@@ -213,6 +213,12 @@ footer {
   justify-content: space-between;
 }
 
+blockquote {
+  border-left: 3px solid #2175bc;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 details > {
   summary {
     transition: background-color 0.5s ease;
