@@ -164,11 +164,11 @@ This script will save your archives with YAML [Front-matter](https://hexo.io/doc
 There are also some project which is not mine but I taking part in the development / testing / other contributions, more or less. Listed below.
 
 <details>
-<summary markdown="span">[Deepin Desktop Environment](https://github.com/linuxdeepin/dde-file-manager) file manager for DDE(Deepin Desktop Environment).</summary>
+<summary markdown="span">[Deepin Desktop Environment](https://github.com/linuxdeepin/dde-file-manager) for the distro *deepin*.</summary>
 
-Deepin Desktop Environment, or DDE, is a linux desktop enviroment mainly designed for the distro [Deepin](https://distrowatch.com/table.php?distribution=deepin) (be aware, this linked to the distrowatch site). I used to take part in maintain DDE componments include DTK and some DDE apps like Deepin File Manager.
+Deepin Desktop Environment, or DDE, is a linux desktop enviroment mainly designed for the distro [Deepin](https://distrowatch.com/table.php?distribution=deepin) (be aware, this linked to the distrowatch site) but also available under Archlinux, Fedora, Gentoo and other linux distro. I used to take part in maintain DDE componments include DTK and some DDE apps like Deepin File Manager.
 
-Actually I **was** an employee in Wuhan Deepin Technology Co.,Ltd. , and that's what I did mainly works on. I also managed to review and help merge some community patches from GitHub, but due to some internal reason, not all community patches can get merged into the main codebase...
+Actually I **was** an fulltime employee in Wuhan Deepin Technology Co.,Ltd. , and that's what I did mainly works on. I also managed to review and help merge some community patches from GitHub, but due to some internal reason, not all community patches can get merged into the main codebase...
 </details>
 
 <details>
