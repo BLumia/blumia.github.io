@@ -164,11 +164,11 @@ This script will save your archives with YAML [Front-matter](https://hexo.io/doc
 There are also some project which is not mine but I taking part in the development / testing / other contributions, more or less. Listed below.
 
 <details>
-<summary markdown="span">[Deepin File Manager](https://github.com/linuxdeepin/dde-file-manager) file manager for DDE(Deepin Desktop Enviroment).</summary>
+<summary markdown="span">[Deepin Desktop Environment](https://github.com/linuxdeepin/dde-file-manager) file manager for DDE(Deepin Desktop Environment).</summary>
 
-Deepin File Manager is the default file manager app for Deepin Desktop Enviroment. I taking part in refacting code for some componments like the left sidebar and the top crumb bar / address bar, and also did some bugfix.
+Deepin Desktop Environment, or DDE, is a linux desktop enviroment mainly designed for the distro [Deepin](https://distrowatch.com/table.php?distribution=deepin) (be aware, this linked to the distrowatch site). I used to take part in maintain DDE componments include DTK and some DDE apps like Deepin File Manager.
 
-Actually I am working in Deepin Inc. and that's what I am mainly working on. I also working on some other projects which is also a part of Deepin Desktop Enviroment, but what I have done is mainly focus on the file manager app so I just list this one here.
+Actually I **was** an employee in Wuhan Deepin Technology Co.,Ltd. , and that's what I did mainly works on. I also managed to review and help merge some community patches from GitHub, but due to some internal reason, not all community patches can get merged into the main codebase...
 </details>
 
 <details>
