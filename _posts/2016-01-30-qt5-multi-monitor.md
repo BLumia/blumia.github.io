@@ -3,6 +3,10 @@ title: Qt5 多显示器获取不同显示器的分辨率和位置的方法
 date: 2016-01-30 22:52:20
 tags: ["Qt","c++"]
 ---
+
+> 2020/05/30 edit:  
+> 该文章描述的特性已过时，建议检索新的 Qt 文档来查找适用于新版本 Qt 的解决方案。此文章保留做归档目的。
+
 先放官方文档链接：[QDesktopWidget - Qt5 Reference](http://doc.qt.io/qt-5/qdesktopwidget.html)
 
 之前一直在用被我乱搞后的ShadowPlayer作为默认播放器，后来主力系统换成linux了也就没再用了。这两天the Witness发布，也正好想玩一些别的windows only的游戏，于是回到windows打算好好玩一玩游♂戏。而这几天因为集训也还是在机房，于是我拿着我那台电脑显示器连着笔记本玩双屏很爽，回到windows后发现依然很爽，不过播放器mini界面会有bug，总是会回到主显示器的最右面，于是打算修一修，然后就有了这一片水文（
