@@ -106,9 +106,9 @@ There is a blog post(Chinese) for this repo. [See here](https://www.cnblogs.com/
 Some of my projects are old or stopped for support for some reason, or just archived because there's no need for update. It may still works and maybe in someday I will probable pick up some projects.
 
 <details>
-<summary markdown="span">[BLumiaOJ](https://github.com/BLumia/BLumiaOJ) a HUSTOJ compatible, Online Judge system. ([online site](https://oj.blumia.cn/)).</summary>
+<summary markdown="span">[BLumiaOJ](https://github.com/BLumia/BLumiaOJ) a HUSTOJ compatible, Online Judge system.</summary>
 
-This is a HUSTOJ compatible, Online Judge system's front-end. There is also an [online site](https://oj.blumia.cn/) for testing purpose.
+This is a HUSTOJ compatible, Online Judge system's front-end.
 
 Actually I was planning to write a judge core to make it become a fully functional Online Judge system, but for now I think it's not necessary to reinvent the wheel. So please use HUSTOJ's judge core or write your own, refer to the repo and check out the README file for more details.
 </details>
