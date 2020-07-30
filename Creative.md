@@ -11,7 +11,7 @@ Since I am interested in a lot of stuff like programming and music producing, I 
 
 Here is a list of projects I am / was working on. Most of them are open source project and host on my [GitHub](https://github.com/BLumia/). There are also some projects not maintained by me but I was taking part in development, just check it out if you are interested.
 
-Most newer projects come with a license file, please refer to them for licensing details. If not, the project's source code are provided "as-is", licensed under [MIT license](https://opensource.org/licenses/MIT) and come with ABSOLUTELY NO WARRANTY. So please use them at your own risk. 
+Most newer projects come with a license file, please refer to them for licensing details. If there is no license file for a repo but you would like to use it, you may need to submit an issue or contact me directly.
 
 ### My Working Gears
 
@@ -54,7 +54,7 @@ This is a TouHou BGM player for all platform, with directly support for Linux, t
 Thanks to [thpacth/thtk](https://github.com/thpatch/thtk/), this player support all majer version (>=th07) of TouHou game. And it's possible to run under Mac but I can't test it since I never have a Mac computer.
 </details>
 <details>
-<summary markdown="span">[Pineapple Pictures](https://github.com/BLumia/PineapplePictures) a simple Tencent QQ style image viewer.</summary>
+<summary markdown="span">[Pineapple Pictures](https://github.com/BLumia/pineapple-pictures) a simple Tencent QQ style image viewer.</summary>
 
 This is a very casual project for my personal use, and it just works under both Windows and [Archlinux](https://aur.archlinux.org/packages/pineapple-pictures-git/).
 
@@ -63,7 +63,7 @@ The reason of this project is just because the default image viewer under Window
 Since this project is not for people other than me at all, I still list it here in case someone may like it.
 </details>
 <details>
-<summary markdown="span">[Mutter](https://github.com/BLumia/Mutter) a lightweigth scaffold for blogging and creating web pages.</summary>
+<summary markdown="span">[Mutter](https://github.com/BLumia/Mutter) a lightweight scaffold for blogging and creating web pages.</summary>
 
 Mutter is a lightweight scaffold for blogging and creating web pages. It's free and open source, and it works on any hosts which provides a PHP enviroment like LAMP, WAMP, LNMP, etc.
 

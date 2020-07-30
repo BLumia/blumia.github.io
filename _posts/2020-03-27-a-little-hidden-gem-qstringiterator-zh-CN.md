@@ -116,28 +116,28 @@ bool QString::isUpper() const
 个人来看的话，原因有这些：
 
  - 这个 API 如果变得更有 C++ 风味，更少 Java 风味的话，会更振奋人心。与其这样写：
- ``` cpp
-QStringIterator i(str);
-while (i.hasNext())
-  use(i.next());
- ```
- 我们*也应当*这样写：
- ``` cpp
- // C++11
- for (auto cp : QStringIterator(str))
+   ``` cpp
+   QStringIterator i(str);
+   while (i.hasNext())
+   use(i.next());
+   ```
+   我们*也应当*这样写：
+   ``` cpp
+   // C++11
+   for (auto cp : QStringIterator(str))
    use(cp);
- 
- // C++20
- auto stringLenInCodePoints = std::ranges::distance(QStringIterator(str));
- bool stringIsUpperCase = std::ranges::all_of(QStringIterator(str), &QChar::isUpper);
- 
- // C++20 + P1206
- auto decodedString = QStringIterator(str) | std::ranges::to<QVector<uint>>;
- ```
 
- 然而这些期望的 API 目前都做不到——`QStringIterator` 既不是范围（`std::ranges::range`）也不是可迭代类型。
+   // C++20
+   auto stringLenInCodePoints = std::ranges::distance(QStringIterator(str));
+   bool stringIsUpperCase = std::ranges::all_of(QStringIterator(str), &QChar::isUpper);
 
- 开放接口的话就会导致诸如此类的很多很多问题，比如像是 `QStringIterator` 这名字好不好的小问题，以及像是如何添加自定义如何处理畸形的 UTF-16 数据的逻辑（跳过？替换？终止？抛异常？）这种大的设计问题。
+   // C++20 + P1206
+   auto decodedString = QStringIterator(str) | std::ranges::to<QVector<uint>>;
+   ```
+
+   然而这些期望的 API 目前都做不到——`QStringIterator` 既不是范围（`std::ranges::range`）也不是可迭代类型。
+
+   开放接口的话就会导致诸如此类的很多很多问题，比如像是 `QStringIterator` 这名字好不好的小问题，以及像是如何添加自定义如何处理畸形的 UTF-16 数据的逻辑（跳过？替换？终止？抛异常？）这种大的设计问题。
  
  - 目前的实现是以清楚起见的，而没有做速度优化。目前这种实现并没有使用 SIMD 或者其它的黑科技。我感觉如果重新设计 API 并应用这些特性的话，大家都会因此收益（例如把错误处理模式作为定制点）。
  
