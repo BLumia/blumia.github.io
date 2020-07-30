@@ -116,12 +116,15 @@ bool QString::isUpper() const
 个人来看的话，原因有这些：
 
  - 这个 API 如果变得更有 C++ 风味，更少 Java 风味的话，会更振奋人心。与其这样写：
+
    ``` cpp
    QStringIterator i(str);
    while (i.hasNext())
    use(i.next());
    ```
+
    我们*也应当*这样写：
+
    ``` cpp
    // C++11
    for (auto cp : QStringIterator(str))
