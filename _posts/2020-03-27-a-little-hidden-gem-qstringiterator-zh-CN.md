@@ -120,7 +120,7 @@ bool QString::isUpper() const
    ``` cpp
    QStringIterator i(str);
    while (i.hasNext())
-   use(i.next());
+       use(i.next());
    ```
 
    我们*也应当*这样写：
@@ -128,7 +128,7 @@ bool QString::isUpper() const
    ``` cpp
    // C++11
    for (auto cp : QStringIterator(str))
-   use(cp);
+       use(cp);
 
    // C++20
    auto stringLenInCodePoints = std::ranges::distance(QStringIterator(str));
