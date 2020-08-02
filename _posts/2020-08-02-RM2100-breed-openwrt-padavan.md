@@ -1,7 +1,7 @@
 ---
 title: 红米路由器 AC2100 刷入 Breed + OpenWrt / Padavan 过程记录
 tags: []
-date: 2020-07-31 20:09:52
+date: 2020-08-02 17:19:27
 ---
 
 ### 杂话
