@@ -1,75 +1,75 @@
 ---
-title: һ���ڵ��������滯����
+title: 一年期的软件正版化尝试
 date: 2019-10-03 16:14:00
 ---
 
-*��������ˮ�����ʵ����£��Ķ������岻��*
+*几乎是流水账性质的文章，阅读的意义不大*
 
-���ڱ�����������������Ե�ʣ���Ҳʹ�ù��ܶ���ν���ƽ�����������Сѧ�õ����� XX ����վ���ص��ĸ��ֵ�����Ϸ����ѧУ���Կν� flash ����ʼʹ�� flash 8 ��Ҳ�������� Photoshop ֮��Ŀ���ȥ������Ҷ����õ����������ŶԸ��ֶ�����ʶ�Ľ�һ�����룬�����������ʵ������ǵ�����Ϊ���ǲ���ȷ�����飬�����������˽�����Щ����Ҳ�Բ��Ƿǳ�������Щʹ�á����ҷ���Ҳ��������Щ����ӯ��������֮ǰ��װ���������ˣ�Ҳ����ɾ���ˣ�ż������Ҳ����ν��
+由于本土化互联网环境的缘故，我也使用过很多所谓的破解软件，比如小学用电脑在 XX 软件站下载到的各种单机游戏，从学校电脑课教 flash 而开始使用 flash 8 ，也包括类如 Photoshop 之类的看上去几乎大家都在用的软件。随着对各种东西认识的进一步深入，才逐渐清楚了事实上这就是盗版行为，是不正确的事情，不过即便是了解了这些，我也仍不是非常在意这些使用——我反正也不拿着这些软件盈利，而且之前都装到电脑上了，也懒得删掉了，偶尔用用也无所谓。
 
-��ʵ�ܶ���ʶ����Ҳ������ô˵��˵�Լ���Ҳ֪���õ�һ���������ǵ��棬��������Ҷ����ã�����������˾����Ҳ���θ���ʹ�õ������Ϊ���ܣ����õĻ����˸��Լ�����֮��ûʲô�ô�����������������ͦ����Ҳͦ������ģ������ǻ��룬��Ȼʹ�õ������������ǲ��Եģ��������������������
+其实很多认识的人也都会这么说，说自己“也知道用的一部分软件是盗版，但反正大家都在用，甚至软件公司本身也放任个人使用盗版的行为不管，不用的话除了给自己添堵之外没什么好处”。尽管这听起来挺正常也挺能理解的，但还是会想，显然使用盗版软件本身是不对的，但就真的做不到不用吗？
 
-����ֱ��ȥ���ҵľɱʼǱ��о����ٳԵ����ҵĺܶ���;[^1]�������˸��µıʼǱ����±��ӵ��ֹ�ȻҪ�ѳ��û�������֮��Ķ��ȸ��ϣ����Ǿ�ͻȻ�����뷨������һ�����±����Ͼ����ܵĲ��õ��������������ǲ�����Ļ���Լ������ܶ����⡣�����������󣬶������ǰ��һ��ʱ����ʵ�Ҳ�û����ô���ҵ��»��������ǳ������þɵ��ԣ�ֱ��ȥ��ʮһ�����ҰѾɵ��Դ��ؼң��ſ�ʼ����»�����������ʵ���ڵ����ö���ȥ��ʮһ�ڼ����ġ������ڣ�����ʮһ������һ�꣬����Ҳ�����ʱ��дһд��������顱�ĸ��ܡ�
+于是直到去年我的旧笔记本感觉不再吃得消我的很多用途[^1]，隧买了个新的笔记本。新本子到手固然要把常用环境软件之类的都先搞上，于是就突然萌生想法打算试一试在新本子上尽可能的不用盗版软件，看看是不是真的会给自己带来很多问题。机器刚买来后，东西配好前的一段时间其实我并没有怎么动我的新机器，而是持续在用旧电脑，直到去年十一长假我把旧电脑带回家，才开始搞的新机器，于是其实初期的配置都是去年十一期间做的。到现在，今年十一，正好一年，于是也趁这个时机写一写这个“体验”的感受。
 
 ## Setup
 
-����ǰ�ҿ�ʼ�ճ��� linux �µ����滷���ڽ��п��������֣���Ȼ���ڲ�������������ȱʧ���һ��ǻ����ʹ�� Windows ϵͳ���ҵĻ����ʹ����ñʼǱ�һ������������ Windows ��ͥ��� Office �칫������������֮ǰû��ǿ������ Windows ��רҵ�����ԣ����� Windows �ʹ��������ã���û�д�����װ������ Linux ��һ��ʼΪ��֤���Ҳ��ᰲװ Gentoo ���� chris �ġ�ָ�����°�װ�� Gentoo(OpenRC)+KDE��Ȼ����Ϊ���ԱȽ��µ�Ե�ʣ����������ʹ��ذ嶼�����⣬������û Gentoo ʹ�þ����ֲ����� `~`�������� Gentoo �����������ţ�Ȼ��װ�˸� Arch(systemd)+KDE [^2]��[^3]��
+几年前我开始日常在 linux 下的桌面环境内进行开发和娱乐，当然由于部分类型软件的缺失，我还是混合在使用 Windows 系统。我的机器和大多家用笔记本一样，出厂带了 Windows 家庭版和 Office 办公软件。好在我之前没有强依赖上 Windows 的专业版特性，所以 Windows 就打算留着用，而没有打算重装。至于 Linux ，一开始为了证明我不会安装 Gentoo 而在 chris 的“指导”下安装了 Gentoo(OpenRC)+KDE，然而因为电脑比较新的缘故，无线网卡和触控板都有问题，而我又没 Gentoo 使用经验又不敢上 `~`，故最终 Gentoo 是留下来供着，然后装了个 Arch(systemd)+KDE [^2]用[^3]。
 
-ϵͳ����֮���������Ҫ�ܵ������ˣ�������Ŀǰ�������ģ�
+系统搞完之后就是上面要跑的软件了，大致上目前是这样的：
 
   \       | Windows								| Linux(x11)
 ----------|-------------------------------------|-----------
 IDE       |Visual Studio Community, QtCreator	| QtCreator
 DAW		  |Cakewalk by BandLab, FL Studio Fruity Edition | N/A
 NLE		  |DaVinci Resolve, Olive Video Editor  | Kdenlive
-3D��ģ	  |Blender									| Blender
-¼���ʹ���  |ShareX, ScreenToGif, OBS Studio		| ���¼��
-��Ƶ�༭��  |OcenAudio, Audacity					| OcenAudio, Audacity
-�ı��༭��  |Notepad++, Geany, Visual Studio Code | Geany, Visual Studio Code, Notepadqq
-�����     |VirtualBox							| VirtualBox
-ͼ��༭��  |mspaint, Krita, Inkscape, GIMP		| Krita, Inkscape, GIMP
-Ϳѻ		  |FireAlpaca							| N/A
-��Ƶ������  |ShadowPlayerBL						| DEADBEEF, VLC
-��Ƶ������  |PotPlayer, VLC						| VLC
-�����	  |Chrome, Firefox						| Chrome, Firefox
+3D建模	  |Blender									| Blender
+录屏和串流  |ShareX, ScreenToGif, OBS Studio		| 深度录屏
+音频编辑器  |OcenAudio, Audacity					| OcenAudio, Audacity
+文本编辑器  |Notepad++, Geany, Visual Studio Code | Geany, Visual Studio Code, Notepadqq
+虚拟机     |VirtualBox							| VirtualBox
+图像编辑器  |mspaint, Krita, Inkscape, GIMP		| Krita, Inkscape, GIMP
+涂鸦		  |FireAlpaca							| N/A
+音频播放器  |ShadowPlayerBL						| DEADBEEF, VLC
+视频播放器  |PotPlayer, VLC						| VLC
+浏览器	  |Chrome, Firefox						| Chrome, Firefox
 
-������ﲢû�а칫��������Ϊ��ʵ�Ҹ��˵�ȷû�������󣬶����ı���¼���һ��� markdown ������ͨ���ı�д����һ�������Ҹ���Ҳû�й�����˴����ĵ�����չʾ֮�����;�����Ծ����� Windows ���� MS Office ���ã�Ҳװ�� Libre Office ����ʵ����ѹ��û�ù��ġ��������˵�����Ļ������ǵ�ȷ���������������ǹ���ͳһʹ�� WPS Linux ������ĵ��༭������Ҳ����ʲô�����ˡ����������鹤����������Ҫʹ�õĹ��߶�Ӧ�������˵�λ�ṩ����ƪ������Ҫ��ע��Ҳ�Ǹ�����;����ȫ���滯�����ǹ�����;���ʽ�����Ҳ�Ͳ������۹��������µ������ˡ�
+上面表里并没有办公软件，因为其实我个人的确没这类需求，对于文本记录，我会用 markdown 或者普通纯文本写，而一年以来我个人也没有过向别人传输文档用于展示之类的用途，所以尽管我 Windows 下有 MS Office 可用，也装了 Libre Office ，但实际是压根没用过的。不过如果说工作的话，倒是的确有这样的需求，我们工作统一使用 WPS Linux 版进行文档编辑，所以也不是什么问题了。不过工作归工作，工作需要使用的工具都应该由用人单位提供，这篇文章主要关注的也是个人用途的完全正版化而不是工作用途，故接下来也就不再讨论工作场景下的需求了。
 
-IDE �Ļ�������Ŀǰ��Ҫд���� Qt ���� QtCreator ��Ȼ����ѡ��������һЩ������������󣬱���鿴�ͱ��� Win32 Ӧ�ã��ͻ����� VS �ˡ���Щʱ����� Android Studio д�㶫���棬Ȼ������Ҳ����Ҫд�ˣ�����Ҳ��ûװ�Ǹ��Ӵ�Ŀ��������ˡ�DAW ���棬FL Studio ��Ŀǰֻ�и� Fruity �棬�κ�ֱ�ӱ༭����Ĺ��ܶ�û�У�������΢�е���֮ǰΪʲô��ֱ����� Producer �档������һ���ϳ��õ� Cakewalk SONAR���������� Cakewalk by BandLab ����������ʹ��ϰ�ߵ�Ե�ʶ���̫���ã���ȷ��ϰ�� FL �� pianoroll �ˣ���NLE ��ʵ���궼û��ô�ù����򵥲ü��Ĺ��ܺܶ����������������� Windows ��� Kdenlive �������ˣ����Ի������� Resolve������ Linux ��ʹ�� Kdenlive��
+IDE 的话，由于目前主要写的是 Qt ，故 QtCreator 显然是首选，而对于一些其它的奇怪需求，比如查看和编译 Win32 应用，就会用上 VS 了。早些时候会拿 Android Studio 写点东西玩，然而现在也不需要写了，于是也就没装那个庞大的开发环境了。DAW 方面，FL Studio 我目前只有个 Fruity 版，任何直接编辑音轨的功能都没有，所以略微有点后悔之前为什么不直接买个 Producer 版。至于另一个较常用的 Cakewalk SONAR，后来成了 Cakewalk by BandLab ，不过由于使用习惯的缘故而不太常用（的确很习惯 FL 的 pianoroll 了）。NLE 其实今年都没怎么用过，简单裁剪的功能很多软件都能做，不过 Windows 版的 Kdenlive 质量感人，所以还是用了 Resolve，而在 Linux 下使用 Kdenlive。
 
-¼����������ԣ�Windows ��¼����Ϸ�������ڽ��� Game bar ֱ��¼�ƣ���ʱ��¼ GIF ����� ShareX��Linux �º�������������������еĻ�����Ҳ�����ϰ��ʱ���ã����Ǿ������¼���ˡ���Ƶ�༭��֮ǰһֱ�� Audacity���������� OcenAudio ͦ�ÿ����ͻ�����������û����������ȫͼ������ÿ����ı��༭������һ��� Notepad++ �� Geany ��������֪���Ĵθ�����Notepad++ ��ĳ����ɫ�����±༭ Markdown �ĸ�����ȫ�����ˣ������ұ༭ Markdown Ҳ��ʼ�� Geany ��.. ���� vscode ����ʵ����������ϴ��͵���Ŀ��һЩ��ż��Ҳ��д�����ã�����д go ��ʱ��
+录屏的需求而言，Windows 下录制游戏现在有内建的 Game bar 直接录制，短时间录 GIF 则会用 ShareX。Linux 下很少有这样的需求，如果有的话基本也都是上班的时候用，于是就是深度录屏了。音频编辑器之前一直用 Audacity，后来发现 OcenAudio 挺好看，就换了它。反正没复杂需求，完全图个界面好看。文本编辑器则是一贯的 Notepad++ 和 Geany 。不过不知道哪次更新起，Notepad++ 在某个暗色主题下编辑 Markdown 的高亮完全坏掉了，于是我编辑 Markdown 也开始用 Geany 了.. 至于 vscode ，其实是用来浏览较大型的项目多一些，偶尔也会写代码用，比如写 go 的时候。
 
-����������������ĸ�ƽ̨������ VirtualBox������ HyperV ����Ϊ���ÿ���ô�ö��ѣ������� VMWare Player ������Ϊ��ֻ�з���ҵ��Ȩ�����Ҳ��Ƿǳ�ȷ���ҵ������ǲ���������ҵ��;�����й��� Windows ��װ Deepin ���������Ӧ�����������󣩡�
+虚拟机软件我无论哪个平台都是用 VirtualBox，不用 HyperV 是因为懒得看怎么用而已，而不用 VMWare Player 则是因为我只有非商业授权，而我不是非常确定我的需求是不是属于商业用途（我有过在 Windows 下装 Deepin 虚拟机来做应急开发的需求）。
 
-ʣ�µľ��Ǹ��ֲ鿴�������֮��ģ�ͼ��༭�����ر�д�� mspaint ������Ϊ�ҵ�ȷ���� mspaint ̫˳���ˣ������������������� Kolourpaint ʹ�����������ú���֡�Ϳѻ�Ļ�����֮ǰһֱ���� Krita ���������Թ�һ�� SAI �ͷ�������ȷ�� Krita ���Ÿ�˳��һЩ��Ȼ������ SAI �ƺ��ǻ����뼤��о����� DRM �Ҳ�̫�ܽ��ܣ����Ǿ�ѡ���� FireAlpaca������ʵ����������ѹ�����ử����������ʵҲ�����á�ʣ�µİ���ͼ�����Ƶ�鿴�����Ҿ����ҵ�����ʵ�����ڱȽ���֣����Ի��õ���һЩ�Լ�д���߸Ĺ����������������Լ�������
+剩下的就是各种查看器浏览器之类的，图像编辑器我特别写了 mspaint ，是因为我的确觉得 mspaint 太顺手了，其它近似软件，包括 Kolourpaint 使用起来都觉得很奇怪。涂鸦的话，我之前一直在用 Krita ，而后来试过一次 SAI 就发现它的确比 Krita 用着更顺手一些。然而鉴于 SAI 似乎是机器码激活，感觉这种 DRM 我不太能接受，于是就选了用 FireAlpaca。不过实际上由于我压根不会画画，所以其实也很少用。剩下的包括图像和音频查看器，我觉得我的需求实在属于比较奇怪，所以会用的是一些自己写或者改过的软件来满足我自己的需求。
 
-��������ԣ�֮ǰ��ʵ�� firefox �� chrome ������˵û̫�����𣬶� firefox ���� DownThemAll! �� NetVideoHunter �������Ƚ������ҵĲ��������֮ǰ�� firefox �õĶ�һЩ������ Mozilla ����һ���Ҿ��÷ǳ����ľ�������Ǩ�Ʋ���� WebExtensions������֮ǰ��һ�ڲ�����ҵ��ˣ�������Ҳ�ͳ����� chrome �ˣ����������� firefox �˺ŵ����롣������ chrome ���õ���һЩ�Ƚ������Ĳ�������� cVim ��ϰ����һЩ��ݼ����ֵ� firefox û��������ã��������ڳ��˵� css ֮�⣬Ҳ���������е� firefox �ˡ�
+浏览器而言，之前其实用 firefox 和 chrome 对我来说没太大区别，而 firefox 还有 DownThemAll! 和 NetVideoHunter 这两个比较吸引我的插件，所以之前是 firefox 用的多一些，后来 Mozilla 做了一个我觉得非常蠢的决定打算迁移插件到 WebExtensions，于是之前的一众插件都挂掉了，于是我也就持续用 chrome 了，甚至忘掉了 firefox 账号的密码。后来在 chrome 上用到了一些比较依赖的插件，比如 cVim ，习惯了一些快捷键后发现到 firefox 没这玩意儿用，于是现在除了调 css 之外，也很少主动切到 firefox 了。
 
-## �����Ĳ�˳��
+## 遇到的不顺手
 
-���ֻ�����ҳ��õ�Ӧ�ã�������ʵû����Ҫд��ƪ����������������һ������ͼ�����ܲ���֮ǰ��ϰ�ߵĵ������������ǻ���������һЩ��˳�ֵ�����ġ�
+如果只是列我常用的应用，那我其实没多大必要写这篇东西出来。由于这一年是试图尽可能不用之前用习惯的盗版软件，于是还是有遇到一些不顺手的情况的。
 
-���ӵĻ�����֮ǰ�� Flash �ĳ�����ʵ���Ǳ༭��������ѣ��� Flash �����Ʒ��һֱ��û�ҵ����������� Krita �� Animation �����ռ�Ԥ�����һ���̶����������������Ǿ��� Krita �պ����ˡ���Ȼ�������� ScreenToGif Ҳ���˺ܸ߼�����˳�ֵĹ������༭ gif ������Ҳ��ʱ������Ǹ������������� Flash ���䶯������������������û�ҵ�ʲô���Ʒ���� Adobe �Ķ�������Ҳ���ܽ��ܣ������������ַǳ���ȵ�ʹ�ó�����
+例子的话，我之前用 Flash 的场景其实就是编辑表情包而已，而 Flash 的替代品则一直都没找到。后来发现 Krita 的 Animation 工作空间预设可以一定程度上替代这个需求，于是就用 Krita 凑合用了。当然后来发现 ScreenToGif 也带了很高级并且顺手的功能来编辑 gif ，于是也有时候会用那个。不过，对于 Flash 补间动画这样的特性我则还是没找到什么替代品，而 Adobe 的订阅制我也不能接受，尤其是我这种非常轻度的使用场景。
 
-�����ܵ�Ӱ��Ŀ����Ǳ�������FL û����Ƶ��Ļ���ȷ�ܶ�ʱ���ǳ���˳�֣���������Ҫĳ��λ�ò���� sfx����ֻ�ܲ�� sampler Ȼ���� midi note on ������������������ workaround ����Ҫ����Ч��ʱҲ������ܡ������˻� DAW ����Ҫ��Ӧ�µĹ����������ѡ���ƺ���ֻ����Ǯ���� FL �����ߵ��εİ汾�ˡ�
+另外受到影响的可能是编曲需求。FL 没有音频轨的话的确很多时候会非常不顺手，例如我想要某个位置插入个 sfx，就只能插个 sampler 然后点个 midi note on 来触发，并且这样的 workaround 在需要调整效果时也会很难受。而除了换 DAW （需要适应新的工作流）外的选择，似乎就只能掏钱升级 FL 到更高档次的版本了。
 
-�����Ļ��������������Ȼ�л���ʹ��...�������ص����� TouHou ������Դ֮��ķ�������Դ��������Ʊ�����Լ��������Ҳû�����ȡ;���� abandonware[^4]��û�취�����飩������Ȼ��������һ��Ĺ���ʹ�����ǣ��ǵ�ȷ�����úͲ���Ӧ�õ�ȷ����ԡ����ֲ�ʹ�÷������������Ŀ����ԵĽ������Ӱ�죬�������ǰ����������������Թ������˻����Ժ���Լ����ο����������ڵĹ۵�ɡ�
+其它的话，我这个过程仍然有还在使用...网上下载到的新 TouHou 正作资源之类的非正版资源（后续补票），以及个别的再也没正版获取途径的 abandonware[^4]（没办法的事情）。我仍然决定在这一年的过程使用它们，是的确觉得用和不用应该的确不会对“保持不使用非正版软件”的可行性的结论造成影响，不过还是把这个情况记下来，以供其它人或者以后的自己来参考评判我现在的观点吧。
 
-�������Ļ���Windows ��ͥ����ܿ�����һ����Windows Defender �ز����ˣ�֮ǰ�� Policy Plus ���Թص���������֪���Ĵθ��¿��� break �����Ǹ�����ԣ��������ڲ����ر�Ӱ��ʹ�á�
+再其它的话，Windows 家庭版可能可以算一个。Windows Defender 关不掉了，之前用 Policy Plus 可以关掉，后来不知道哪次更新可能 break 掉了那个组策略，不过好在不是特别影响使用。
 
-## ����
+## 结论
 
-������ô������������������Ҳû�������ܴ�������谭���ҵ��ճ�ʹ�ã������Ҿ��þ�Ŀǰ�����������ԣ����������滯�������Ǹ�ʲô����ʵ�������������飬��ֻ��ȡ������û��ȥ����������ʶ��
+于是这么算下来，我整个过程也没有遇到很大的问题阻碍到我的日常使用，所以我觉得就目前本土环境而言，“软件正版化”并非是个什么不现实或者难做的事情，而只是取决于有没有去这样做的意识。
 
-��Ȼ���󻷾��£������Ҷ����� A �������� B �����ܵ�ȷ�������Ե���Щ���������󻷾��¶����� A ������˵�� A �ǶԵġ���������˶����� MS Office �����ĵ���������˵�� WPS ���� Libre Office �Ǵ��ģ���Ҷ����� Photoshop ���� ��Pͼ�� ����ͼ�����Ĵ����ʵ�ʱ����ʹ����������Ҳ���Ǵ��󣬴�Ҷ����Ҽ���ߵ�ʱ�򲻴�����������ʹ�������Ǵ��ġ������ʱ�򣬿��ܸ���ҪһЩ���ܹ�վ�������߸������������ǶԵģ�����������һ������ȷ�����顣
+当然，大环境下，假如大家都在做 A 而我在做 B ，可能的确会让我显得有些异样，但大环境下都在做 A 并不能说明 A 是对的。例如更多人都在用 MS Office 交换文档，并不能说明 WPS 或者 Libre Office 是错的，大家都在用 Photoshop 甚至 “P图” 成了图像处理的代名词的时代，使用其它工具也并非错误，大家都在找激活工具的时候不代表正常购买使用许可是错的。在这个时候，可能更需要一些人能够站出来告诉更多人怎样做是对的，来引导大众一起做正确的事情。
 
-��Ȼ��ƪ���ᵽ�˺ܶ���������������֣�������Ȼ��Ҳ��ʹ�����ǣ�������ƪ���µ�Ŀ��Ҳ���Ǹ��ߴ�Ҷ���ʹ�����������������Ҿ����������Ļ��������һЩ������������ʹ����������һ�������������û�����ʶ��������������ȷ�����������ܿ�ʼ�����ܲ�����������鲻�ǣ�
+显然这篇我提到了很多非自由软件的名字，并且显然我也在使用它们，所以这篇文章的目的也不是告诉大家都来使用自由软件（尽管我觉得能做到的话会更理想一些），但就类似使用自由软件一样，得让我们用户先认识到，怎样才是正确的做法，才能开始尽可能不做错误的事情不是？
 
-2019��10��3�� 16��14��
+2019年10月3日 16点14分
 
-*д�귢���Ҿ������������뷨Ҳûд��������ø��ˣ�����������*
+*写完发现我觉得我想表达的想法也没写清楚，懒得改了，先这样放着*
 
-[^1]: ̹��˵��ʵ�Ǵ���Ϸ����������ģ���� Ori �ܿ��ɻõ�Ƭ���������Լ�һ��ѹ�ע����Ϸ��˵�췢���ˣ������Ͻ������µ��á�
-[^2]: ���ܻ��ж���֪���ң�Ŀǰ���� Deepin �����ߣ������Ϊʲô�Ҳ��� DDE ���ر��Ҫ��˵ԭ������ʵ���޷����� DDE ��һ����������ѡ��ʹ�ÿͻ��˴������Σ�����С���û���ƶ����µ��ٵÿ�������Ϣ���ֺ�������ȱʧ������û�����һ���Ե����������Ч�ȣ����Լ��� DDE ���ܷ� DDE Ӧ�ã������� Qt Ӧ�ã���������ʵ�����ã����ʹ��֮һ�Ƿ� DDE Ӧ�û������İ�ɫ����֧�֣������� GTK ���⻹�� Qt ���⣬�������е�ɫ��������ɫ���ڽ��ƶ��������ֵ����⣩��������Ϊ�����ߣ��һ���ͼ�ƶ������Щ���⣬������Щ������δ���ǰ���һ����������Ÿ�����Ļ�����ȽϺá�
-[^3]: �� Arch �ĸ��²������ͣ��ҵĴ��ذ�֧�ֺ������������ⶼ���Ÿ��½���ˣ�����Щ���µ����ڻ�û�� Gentoo �У�����˵���� `~` ������� Gentoo Ŀǰ��Ȼ�ǹ���...Ȼ���һ�� 5.x kernel �� LTS ������
-[^4]: Ballance, virtools ֮��ġ��Ͼ��ҽӴ��������Ŀ�ʼ����������е���������ʰɡ�
+[^1]: 坦诚说其实是打游戏的需求决定的，玩个 Ori 能卡成幻灯片，而续作以及一大堆关注的游戏又说快发布了，还不赶紧换个新的用。
+[^2]: 可能会有读者知道我（目前）是 Deepin 开发者，会好奇为什么我不用 DDE ，特别简要来说原因是我实在无法接受 DDE 的一部分设计理念（选择使用客户端窗口修饰，面向小白用户设计而导致的少得可怜的信息呈现和配置项缺失，打断用户交互一致性的糟糕内置音效等），以及在 DDE 上跑非 DDE 应用（尤其是 Qt 应用）的体验其实并不好（最大痛点之一是非 DDE 应用会有糟糕的暗色主题支持，无论是 GTK 主题还是 Qt 主题，甚至会有底色和文字颜色过于近似而看不清字的问题）。尽管作为开发者，我会试图推动解决这些问题，但在这些问题尚未解决前，我还是用我用着更舒服的环境会比较好。
+[^3]: 拜 Arch 的更新策略所赐，我的触控板支持和网卡驱动问题都随着更新解决了，而这些更新到现在还没到 Gentoo 中（或者说还在 `~` 里），所以 Gentoo 目前依然是供着...然后等一个 5.x kernel 的 LTS 发布。
+[^4]: Ballance, virtools 之类的。毕竟我接触互联网的开始在这里，多少有点念想的性质吧。
