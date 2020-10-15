@@ -25,7 +25,7 @@ BLumia (Gary Wang, for real), is a young programmer from China. With his hobby, 
    * willing to make indie game
    * prefer platformer / rhythm / puzzle games
  - Young, simple and fulltime naive
- - Fu<!-- ah you found this comment, but why? -->rry, if that means anything to you.
+ - Fu<span style="font-size: 0;">Seems chrome and firefox now can search with comment and empty span now. But why are you reading this 'hidden' text?</span>rry, if that means anything to you.
  
 ## ~~Beliefs~~
 
