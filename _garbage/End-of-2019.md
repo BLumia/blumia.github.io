@@ -19,7 +19,7 @@ date: 2020-01-05 22:51:00
 
 > 当然这个目标计划的并不是那种下图工具之类的东西而是挖稍微大一些的坑，所以完成当然指的是达到一个差不多说得过去的 “1.0” 状态。至于可选的坑其实挺多的，不过这里就不再列出来了...
 
-事实上 19 年内的确是有做了一些东西出来，比如这个 [PineapplePictures](https://github.com/BLumia/PineapplePictures) 辣鸡看图，以及一个 kdeconnect 接口的 Qt 绑定（对 DBus 接口的封装）。前者原因是我的确没有个顺手的看图工具，然后无论在 Windows 还是各 Linux 发行版下用的看图工具都多少有一些地方很蛋疼，难受到一定程度后忍不了了就写了那个东西。后者原因是我在 Windows 和 UOS/Deepin 下没法比较方便的看我的手机未读通知。当然这两个的完成度其实都达不到所谓 “1.0” 状态（后者目前的完成度甚至不好意思把代码扔到 GitHub[^12]），于是大概不能算是完成了这条计划。
+事实上 19 年内的确是有做了一些东西出来，比如这个 [PineapplePictures](https://github.com/BLumia/pineapple-pictures) 辣鸡看图，以及一个 kdeconnect 接口的 Qt 绑定（对 DBus 接口的封装）。前者原因是我的确没有个顺手的看图工具，然后无论在 Windows 还是各 Linux 发行版下用的看图工具都多少有一些地方很蛋疼，难受到一定程度后忍不了了就写了那个东西。后者原因是我在 Windows 和 UOS/Deepin 下没法比较方便的看我的手机未读通知。当然这两个的完成度其实都达不到所谓 “1.0” 状态（后者目前的完成度甚至不好意思把代码扔到 GitHub[^12]），于是大概不能算是完成了这条计划。
 
 不过说起来的话，最初我是打算试着开一个 [DTK 终端](https://github.com/BLumia/deepin-terminal-ng)的坑来玩，并且也的确做了一段时间[^1]，可惜后来公司决定加班赶 v20 版 DDE 之后我就再也没有时间继续做我的稍微大一些的 sideproject 了。有意思的是，后来公司也开始计划搞 v20 版本打算重制一个 DTK 终端出来[^11]，然后看上去似乎现在的终端开发组会拿着我那套代码继续开发，于是觉得我仿佛无形之中白白无偿加班了...
 
@@ -104,7 +104,7 @@ Chris 作为我一直以来的“偶像”和“试图追赶的目标”之一�
 
 ### 在 Windows 下进行（Qt）开发
 
-使用 Windows 的一大原因是打游戏，另一大原因是用 DAW ，因为我一直觉得在 Windows 下做（非 C# .net 之类的）开发非常不爽，所以只要想写什么东西我通常都会切回 Arch 里搞。而鉴于上面说的加班情况，我加班的这半年多几乎下班之后就基本不会切到 Arch 里去了。然而有的需求还是很蛋疼，比如上面也提到过的，我没法直接用 Windows 来查看我手机上未读的通知，于是我就有需求把 kdeconnect 给搞到 Windows 上来用。于是后来发现 KDE Craft 是个还不错的东西，除了 IDE 我没折腾好用 Craft 环境之外，这东西还不错。能用 pkg-config ，有能用 ECM 的 cmake ，甚至有 auto\*\*\*\*，于是给移植一些应用之类带来了更方便的体验。不过目前的情况，还是得看看怎么配好 IDE 才能更舒服一些，以及目前看上去 Windows 上的 DBus 好像很容易抽风的样子。
+使用 Windows 的一大原因是打游戏，另一大原因是用 DAW ，因为我一直觉得在 Windows 下做（非 C# .net 之类的）开发非常不爽，所以只要想写什么东西我通常都会切回 Arch 里搞。而鉴于上面说的加班情况，我加班的这半年多几乎下班之后就基本不会切到 Arch 里去了。然而有的需求还是很蛋疼，比如上面也提到过的，我没法直接用 Windows 来查看我手机上未读的通知，于是我就有需求把 kdeconnect 给搞到 Windows 上来用[^13]。于是后来发现 KDE Craft 是个还不错的东西，除了 IDE 我没折腾好用 Craft 环境之外，这东西还不错。能用 pkg-config ，有能用 ECM 的 cmake ，甚至有 auto\*\*\*\*，于是给移植一些应用之类带来了更方便的体验[^14]。不过目前的情况，还是得看看怎么配好 IDE 才能更舒服一些，以及目前看上去 Windows 上的 DBus 好像很容易抽风的样子。
 
 不过老实说，常规的 Windows 下进行这种开发似乎会用 canon 之类的东西做依赖管理，不过这些东西我完全没玩过，所以其实对于 Windows 下进行这种开发的常规操作还是摸不清头脑。
 
@@ -130,3 +130,5 @@ Chris 作为我一直以来的“偶像”和“试图追赶的目标”之一�
 [^10]: 现在这里算不上大城市吧。
 [^11]: 2020/05/24 edit：已经出来了，叫[deepin-terminal-reborn](https://github.com/linuxdeepin/deepin-terminal-reborn)...
 [^12]: 2020/05/24 edit：后来还是放出来了，[kdeconnect-dbus](https://github.com/BLumia/kdeconnect-dbus)。放出来的目的是，带同事熟悉一些东西的时候，这种微型项目会很实用，代码量不大结构也简单，很适合拿来“教学”，快速概览后掌握一些东西的常规实现方式。
+[^13]: 2020/12/21 edit: 大概是在我成功在 Windows 下使用 Craft 的 MinGW 工具链完成 KDEConnect 构建后没多久（具体隔了多久没去查），KDE 官方就已经开始提供 Windows 版的 KDEConnect 预编译好的版本了。有兴趣尝试的话，可以在[这里](https://binary-factory.kde.org/view/Windows%2064-bit/job/kdeconnect-kde_Release_win64/)获取到。不过这个 Windows 版也并不能方便的看通知（kdeconnect-indicator 的功能没有 KDEConnect 的 plasmoid/applet 功能多，体验也不算满意就是了，这也是当时打算写“kdeconnect-dbus”的原因。
+[^14]: 2020/12/21 edit: 现在来看的话，KDE Craft 有它独特的地方，不过仅仅是考虑移植别的程序的话，MSYS2 其实蛮值得尝试的，而且 MSYS2 的源本身也带了一些 KDE 的东西。
