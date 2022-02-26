@@ -77,7 +77,7 @@ css-style: >
 			<i class="bl-icon i i-metronome"></i>
 		</a>
 	</div>
-	<div onmouseover="updateSubTitle('Pineapple Metronome - Turn off screen without using the physical power button')" class="bl-item flex item-justify-center">
+	<div onmouseover="updateSubTitle('Pineapple Lock Screen - Turn off screen without using the physical power button')" class="bl-item flex item-justify-center">
 		<a href="https://play.google.com/store/apps/details?id=net.blumia.pineapple.lockscreen">
 			<i class="bl-icon i i-lock"></i>
 		</a>
