@@ -48,7 +48,7 @@ crDroid 比 LineageOS 奇怪的地方大概在于，由于前者规模看上去�
 
 使用 LineageOS 的 recovery 刷入 LineageOS 的 ROM [^3]过程是非常的顺利，刷机完毕后可以进入系统（因为上面遇到的 crDroid 失败，于是为了验证到底是不是成功了，我没在刷入 LineageOS 后就立即刷入 OpenGApps），于是大致推测可能是 crDroid 包和那个第三方移植的 TWRP 都有问题吧。
 
-[^3]: 为了方便日后参考，此时使用的 Recovery 为 lineage-18.1-20210821-recovery-alioth.img，ROM 为 lineage-18.1-20210821-nightly-alioth-signed.zip，OpenGApps 为 open_gapps-arm64-11.0-pico-20210820.zip。刷入失败的 crDroid 为 open_gapps-arm64-11.0-pico-20210820.zip，第三方 TWRP 链接不再给出，毕竟 sideload 模式都进不去，问题确实太大了。
+[^3]: 为了方便日后参考，此时使用的 Recovery 为 lineage-18.1-20210821-recovery-alioth.img，ROM 为 lineage-18.1-20210821-nightly-alioth-signed.zip，OpenGApps 为 open_gapps-arm64-11.0-pico-20210820.zip。刷入失败的 crDroid 为 crDroidAndroid-11.0-20210816-alioth-v7.9.zip，第三方 TWRP 链接不再给出，毕竟 sideload 模式都进不去，问题确实太大了。
 
 刷入并成功启动 LineageOS 后，决定还是老老实实 LineageOS 好了，于是回 Recovery ，清除 Dalvik 缓存并 sideload 了 OpenGApps[^4]，启动后也非常顺利的配置了谷歌服务，最后安装 Magisk Manager 手动 Patch 了 LineageOS 的 Recovery 镜像[^5]并将其重新刷入，于是 Magisk 也算顺利搞定了，这次刷机或许也就这么告一段落了。
 
