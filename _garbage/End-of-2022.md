@@ -1,3 +1,10 @@
+---
+title: End of 2022
+categories: 时间囊
+tags: [时间囊]
+date: 2022-12-26 18:34:00
+---
+
 Apparently we are reaching the end of 2022, today is the Christmas day so it’s time to write my end-of-year review post. It’s a madness year with full of nonsense things going on, and even though I already used the term “madness” three years in a row.
 
 I didn’t publish my last year’s end-of-year post due to some reason but I think this year it will be fine. For some unknown reason I’d like to write this post in English instead of Chinese. I’m bad at English so be aware there will be a bunch of typos and grammar issues.
