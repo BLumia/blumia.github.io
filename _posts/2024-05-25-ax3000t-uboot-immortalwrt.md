@@ -1,7 +1,7 @@
 ---
 title: 小米路由器 AX3000T 刷入 U-boot + ImmortalWrt 过程记录
 tags: []
-date: 2024-05-25 19:14:00
+date: 2024-05-25 19:14:00 +0800
 ---
 
 ## 杂话
@@ -62,7 +62,7 @@ $ scp -O -o HostKeyAlgorithms=+ssh-rsa ./mt7981_ax3000t_fip-fixed-parts-multi-la
 
 于是[我的 fork 仓库在这儿](https://github.com/BLumia/bl-mt798x/)，如果你自己打算用的话，fork 后点 Actions，左侧选 Uboot Ubuntu CI Build（也就只有这一个），然后 Run workflow 下拉框填配置（默认配置就是了，不需要改，我是留着备用的）然后坐和放宽。另外写这个 workflow 的时候还注意到，Ubuntu 24.04 （这个环境目前还是 beta 状态）的 runner 会在重启 systemd 服务的时候把 runner 服务也给停掉，所以当前实质上只能在 ubuntu-22.04 环境上跑。当然目前 ubuntu-latest 仍然是 22.04 就是了（（（
 
-跑完构建就可以得到编译后的版本了。我博客丢出去后大概会把目前的 binary 也丢到 release 一份备用，到时候也把链接更新到这儿吧。得到 binary 后就是把它丢到路由器的 `/tmp/` 目录下（参见上一节示例里的 `scp` 命令），然后 `mtd` 写入进去。OpenWrt 推荐搞之前备份分区，我嫌麻烦没搞，直接上了：
+跑完构建就可以得到编译后的版本了。我博客丢出去后大概会把目前的 binary 也丢到 release 一份备用，~~到时候也把链接更新到这儿吧~~（edit：[我自己目前所用的、自己构建的版本见这里](https://github.com/BLumia/bl-mt798x/releases/tag/24.05.25)）。得到 binary 后就是把它丢到路由器的 `/tmp/` 目录下（参见上一节示例里的 `scp` 命令），然后 `mtd` 写入进去。OpenWrt 推荐搞之前备份分区，我嫌麻烦没搞，直接上了：
 
 ```shell
 # 注意最后的 FIP 是全大写的
@@ -114,6 +114,7 @@ ImmortalWrt 可以认为是很符合大陆特色的一个 OpenWrt 再发行版�
    - [原作者的 “mt798x uboot 功能介绍” 博客](https://cmi.hanwckf.top/p/mt798x-uboot-usage/)
    - [“AX3000T 为什么在 20240123 的 release 中移除了 multi-layout” 讨论](https://github.com/hanwckf/bl-mt798x/issues/52)
    - [我自己的 GitHub Action 在线构建用的 Fork 版](https://github.com/BLumia/bl-mt798x/)
+     - [可供直接使用的编译好的版本](https://github.com/BLumia/bl-mt798x/releases/tag/24.05.25)
  - [ImmortalWrt：Xiaomi Mi Router AX3000T (stock layout) 固件下载与定制页面](https://firmware-selector.immortalwrt.org/?version=23.05.2&target=mediatek%2Ffilogic&id=xiaomi_mi-router-ax3000t)
    - [ImmortalWrt：Xiaomi Mi Router AX3000T (OpenWrt U-Boot layout) 固件下载与定制页面](https://firmware-selector.immortalwrt.org/?version=23.05.2&target=mediatek%2Ffilogic&id=xiaomi_mi-router-ax3000t-ubootmod)
  - 其它参考内容
