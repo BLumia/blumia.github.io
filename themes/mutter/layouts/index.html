@@ -1,0 +1,10 @@
+{{ define "main" }}
+	<main class="flex-container posts">
+		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+		{{ range $paginator.Pages }}
+			<h3><a href="{{ .Permalink }}">{{ .Title }}</a><small><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 01, 2006" }}</time></small></h3>
+		{{ end }}
+		{{ partial "pagination.html" . }}
+	</main>
+{{ partial "sidebar.html" . }}
+{{ end }}

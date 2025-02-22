@@ -1,0 +1,22 @@
+baseURL: 'https://example.org/'
+languageCode: en-us
+title: BLumia's Darkness World
+theme: mutter
+
+pagination:
+  pagerSize: 15
+
+menus:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 1
+  - name: Archives
+    pageRef: /post
+    weight: 2
+  - name: Creative
+    pageRef: /Creative
+    weight: 3
+  - name: About
+    pageRef: /about
+    weight: 4

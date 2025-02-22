@@ -1,0 +1,20 @@
+<header>
+	<!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
+	{{ with .Site.Menus.main }}
+	<nav>
+		<ul>
+			{{ range . }}
+			<li><a class="nobb" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+			{{ end }}
+		</ul>
+	</nav>
+	{{ end }}
+	<!-- check if .Title exists and if so show title-->
+	{{ if .Title }}
+		<h1>{{ .Title }}</h1>
+	{{ end }}
+	{{ if .Params.subtitle }}
+		<h2 class="sub-title">{{ .Params.subtitle }}</h2>
+	{{ end }}
+	<hr/>
+</header>

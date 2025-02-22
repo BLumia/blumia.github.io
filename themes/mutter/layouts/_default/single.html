@@ -1,0 +1,27 @@
+{{ define "main" }}
+	<main>
+		<article>
+			<h1 hidden>{{ .Title }}</h1>
+			{{ if .Date }}
+			<p><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 02, 2006 15:04" }}</time></p>
+			<!-- {{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
+			{{ if gt $ageDays 365 }}
+			<blockquote><p>⚠ This post is over a year old. The information may be out of date.</p></blockquote>
+			{{ end }} -->
+			{{ end }}
+			<div>
+				{{ .Content }}
+			</div>
+			{{ with .Params.tags }}
+			<div>
+				<ul id="tags">
+					{{ range . }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+				</ul>
+			</div>
+			{{ end }}
+		</article>
+	</main>
+<!-- {{ partial "sidebar.html" . }} -->
+{{ end }}

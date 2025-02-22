@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    min-height: 100%;
+    background-color: #2C1B56
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #B9AED2;
+}
+
+.flex {
+    display: flex
+}
+
+.item-justify-center {
+    justify-content: center
+}
+
+.item-align-center {
+    align-items: center;
+    align-content: center
+}
+
+pre {
+    overflow-x: auto
+}
+
+p.alert-heading {
+    margin-bottom: 0;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+}
+
+.nobb {
+    border-bottom: none !important
+}
+
+ul,ol {
+    line-height: 34px;
+    margin-bottom: 24px;
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.61em;
+    justify-content: space-between
+}
+
+div>ul>li:before,div:not(.footnotes)>ol>li:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #5E9CFF;
+    margin-right: 15px
+}
+
+li>ul {
+    margin: 0 30px
+}
+
+li>ul>li:before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #c0a5e8;
+    margin-right: 15px
+}
+
+.footnotes>ol {
+    list-style: decimal;
+    margin: 10px;
+    margin-left: 25px
+}
+
+.footnotes>ol>li {
+    font-size: 14px
+}
+
+li>p {
+    font-size: 14px;
+    display: inline
+}
+
+blockquote {
+    border-left: 3px solid #2175bc;
+    margin-left: 10px;
+    background: rgba(255,255,255,0.1)
+}
+
+details>summary {
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    line-height: 30px;
+    list-style: none;
+    font-size: 18px
+}
+
+details>summary:hover {
+    background-color: #504BAD4A
+}
+
+details>summary::-webkit-details-marker {
+    display: none
+}
+
+details>p {
+    margin: 0 0 0 17px;
+    padding: 8px 0 8px 17px;
+    font-size: 16px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #2175bc;
+    background: #0000003f
+}
+
+summary::before {
+    content: '';
+    font-size: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #5E9CFF;
+    margin: 0 15px
+}
+
+details[open]>summary::before {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #5E9CFF;
+    margin: 0px 12px 0px 10px
+}
+
+nav>ul>li {
+    margin-left: 1.2em;
+    padding: .61em;
+    font-size: 0.875rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.5s
+}
+
+nav>ul>li:hover {
+    border-bottom: 2px solid transparent;
+    border-bottom-color: rgba(255,255,255,0.35);
+    transition: border-bottom-color 0.3s
+}
+
+header>h1 {
+    margin: 0 10px;
+    padding: 0;
+    font-size: 3.125rem;
+    font-weight: normal;
+}
+
+header>h2 {
+    line-height: 1.6em;
+    margin: 0 10px;
+    padding: 0;
+    font-size: 0.9375rem;
+    font-weight: normal
+}
+
+h1,h2,h3,h4 {
+    line-height: 75px;
+    font-size: 30px;
+    margin: 10px;
+    color: #FFFFFF;
+    font-weight: lighter
+}
+
+h2 {
+    line-height: 50px;
+    font-size: 24px
+}
+
+h3 {
+    line-height: 46px;
+    font-size: 20px
+}
+
+h4 {
+    line-height: 40px;
+    font-size: 20px
+}
+
+h2:not(.sub-title),h3,h4,h5,h6 {
+    border-bottom: #472F82 1px solid
+}
+
+h1>small,h2>small,h3>small,h4>small {
+    padding-left: 6px;
+    color: #B9AED2
+}
+
+.posts>h3 {
+    border-bottom: none
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #472F82;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+a {
+    color: #FFF;
+    border-bottom: 1px solid rgba(255,255,255,0.19);
+    transition: border .1s ease-out;
+    padding-bottom: 1px;
+    text-decoration: none
+}
+
+a:hover {
+    border-bottom-color: #fff;
+    color: #FFF;
+    text-decoration: none
+}
+
+p {
+    margin: 10px;
+    line-height: 34px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #B9AED2
+}
+
+p:empty {
+    display: none;
+    margin: 0;
+}
+
+article p>img {
+    max-width: 100%
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 75%
+}
+
+@media all and (max-width: 720px) {
+    .flex-container {
+        width:90%
+    }
+}
