@@ -8,8 +8,11 @@ aliases:
   - /算法题解/2015/08/10/HDU-1045(Fire-Net)-solution.html
 ---
 嘛..markdown爽..那就再爽一次..
+
 相应博客园url：[这里](http://www.cnblogs.com/blumia/p/hdu1045.html)
+
 题解写的越发的少了，主要也只是因为题写的慢了..莫名其妙的动力减少以及难度增加导致的做题缓慢什么的.. ~~趁着这回写一次凑个数吧~~
+
 以防万一，题目原文和链接均附在文末。那么先是题目分析：
 
 <!--more-->
@@ -145,6 +148,8 @@ fill的宏定义有更科学的方法，这里就只是单纯的抹0。以及for
 ```
 -------------------
 
+## 原始题目信息
+
 题目链接：[Fire Net（HDU 1045）](http://acm.hdu.edu.cn/showproblem.php?pid=1045)
 
 题目属性：二分图最大匹配 （如果愿意你可以去爆搜..）
@@ -152,7 +157,9 @@ fill的宏定义有更科学的方法，这里就只是单纯的抹0。以及for
 相关题目：2444 1083 1281 2819 2389 4185 poj3020 ...
 
 题目原文：
-【desc】
+
+### 【desc】
+
 Suppose that we have a square city with straight streets. A map of a city is a square board with n rows and n columns, each representing a street or a piece of wall. 
 
 A blockhouse is a small castle that has four openings through which to shoot. The four openings are facing North, East, South, and West, respectively. There will be one machine gun shooting through each opening. 
@@ -165,13 +172,22 @@ The following image shows five pictures of the same board. The first picture is 
 
 ![看我多良心，还给备个图][1]
 
+[1]: /media/hdu1045-figure.gif
+
 Your task is to write a program that, given a description of a map, calculates the maximum number of blockhouses that can be placed in the city in a legal configuration. 
-【In】
+
+### 【In】
+
 The input file contains one or more map descriptions, followed by a line containing the number 0 that signals the end of the file. Each map description begins with a line containing a positive integer n that is the size of the city; n will be at most 4. The next n lines each describe one row of the map, with a '.' indicating an open space and an uppercase 'X' indicating a wall. There are no spaces in the input file.
-【Out】
+
+### 【Out】
+
 For each test case, output one line containing the maximum number of blockhouses that can be placed in the city in a legal configuration.
-【SampIn】
-<pre>4
+
+### 【SampIn】
+
+```plain
+4
 .X..
 ....
 XX..
@@ -192,13 +208,16 @@ X.X
 ....
 ....
 ....
-0</pre>
-【SampOut】
-<pre>5
+0
+```
+
+### 【SampOut】
+
+```plain
+5
 1
 5
 2
-4</pre>
+4
+```
 
-
-  [1]: http://blogblumia-typecho.stor.sinaapp.com/usr/uploads/2015/08/2630942644.jpg
