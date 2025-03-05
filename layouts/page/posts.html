@@ -6,5 +6,7 @@
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
-	<div style="margin: 10px; margin-top: 0;"><small>subscribe <a href="/post/index.xml">via RSS</a></small></div>
+	{{ with .OutputFormats.Get "rss" -}}
+	<div style="margin: 10px; margin-top: 0;"><small>subscribe <a href="{{ .RelPermalink }}">via RSS</a></small></div>
+	{{ end }}
 {{ end }}

@@ -17,7 +17,7 @@ aliases:
 
 这样“形式服从于功能”的事情也可以类比到其它方面，例如音乐和商业作品配乐（Stock Music），后者显然也属于音乐，但信息传达的目的性也就更强。当你希望渲染悲伤情绪的时候应当如何配乐，如何让受众一听就知道这个人在干蠢事，如何让这里听起来能彰显我的企业很大气很牛逼之类。这里不得不联想到看过的 Tantacrul 频道的两个视频，[Stock Music & Reality TV - How to Misrepresent the World](https://www.youtube.com/watch?v=G77ev9pks4I) 和 [Corporate Music - How to Compose with no Soul](https://www.youtube.com/watch?v=AIxY_Y9TGWI)。尽管这两个视频都在批判这样的声音或音乐设计安排丢掉了其作为“艺术”的灵魂，但我觉得其实这也正是商业作品音乐和音效安排设计的目的，绝对的“形式服从于功能”。
 
-但说实话，日常生活中的设计场景并未有上面提及的两个视频展示的那样极端，例如可以试着听一下[这段音乐](http://music.163.com/song?id=1857146079&userid=53266685)然后思考可以联想到什么。为游戏的沙漠关卡和丛林关卡配乐，[换做自己的话配器选用会是怎样的](https://knowyourmeme.com/photos/2135911-gaming)，联想所玩过的游戏，这些游戏中的对应关卡的配器做法是否恰当。Tantacrul 所批判的大概是失去灵魂的音乐和对受众观感的刻意影响，而我们平时设计所需要做的大都只是仅仅希望作品能更好的服务于信息传达而已。
+但说实话，日常生活中的设计场景并未有上面提及的两个视频展示的那样极端，例如可以试着听一下[这段音乐](https://soundcloud.com/juriy-nikitin/voice-of-the-spirit-1)然后思考可以联想到什么。为游戏的沙漠关卡和丛林关卡配乐，[换做自己的话配器选用会是怎样的](https://knowyourmeme.com/photos/2135911-gaming)，联想所玩过的游戏，这些游戏中的对应关卡的配器做法是否恰当。Tantacrul 所批判的大概是失去灵魂的音乐和对受众观感的刻意影响，而我们平时设计所需要做的大都只是仅仅希望作品能更好的服务于信息传达而已。
 
 ## Tab to Search
 
