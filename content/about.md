@@ -1,6 +1,7 @@
 ---
 title: "About"
 subtitle: "Something about me."
+type: next
 aliases:
   - 'about.html'
 ---

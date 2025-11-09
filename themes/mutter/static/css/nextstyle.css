@@ -1,0 +1,58 @@
+.sub-title {
+    line-height: 1.6em;
+    padding: 0;
+    font-size: 0.9375rem;
+    font-weight: normal
+}
+
+header>h1 {
+    font-size: 3.125rem;
+}
+
+header>h1, header>h2 {
+    margin: 10px 10px;
+}
+
+article {
+    line-height: 2;
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+article a, footer a {
+    color: white;
+    transition: border .1s ease-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.19);
+    padding-bottom: 1px;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: white;
+    border-bottom-color: #fff;
+}
+
+article h2, article h3, article h4, article h5, article h6 {
+    margin: 1rem 0;
+    padding-bottom: 0.4em;
+    border-bottom: #472F82 1px solid;
+}
+
+blockquote p,blockquote ul,blockquote ol {
+    margin: 0.5em 0;
+}
+
+blockquote {
+    --bs-link-color-rgb: var(--bd-callout-link);
+    --bs-code-color: var(--bd-callout-code-color);
+    padding: 0.25rem 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--bs-info-text-emphasis, inherit);
+    background-color: var(--bs-info-bg-subtle, var(--bs-gray-100));
+    border-left: .25rem solid var(--bs-info-border-subtle, var(--bs-gray-300));
+}
+
+.footnotes>ol>li {
+    font-size: 14px
+}

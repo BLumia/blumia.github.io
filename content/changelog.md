@@ -1,9 +1,14 @@
 ---
 title: "Changelog"
 subtitle: "...changelog?"
+type: next
 aliases:
   - 'changelog.html'
 ---
+
+#### 2025/11/9
+
+ - For some pages, test if we can adapt to bootstrap.
 
 #### 2019/1/8
 
@@ -60,7 +65,7 @@ aliases:
 
 #### 2018/5/20
 
- - Update [Creative]({{< ref "creative" >}})) page, *Not My Projects* section.
+ - Update [Creative]({{< ref "creative" >}}) page, *Not My Projects* section.
 
 #### 2018/5/9
 
@@ -69,10 +74,10 @@ aliases:
 #### 2018/4/30
 
  - Add [Bandcamp](https://blumia.bandcamp.com/) entrance in front page.
- - Update [Creative]({{< ref "creative" >}})) page about my music releasing page.
+ - Update [Creative]({{< ref "creative" >}}) page about my music releasing page.
 
 #### 2018/4/22
 
  - Now we got a changelog! Whooooooaaaaaa!
  - [Mutter](https://github.com/BLumia/Mutter) now supports html `<details>` / `<summary>` tags.
- - Update [Creative]({{< ref "creative" >}})) page.
+ - Update [Creative]({{< ref "creative" >}}) page.

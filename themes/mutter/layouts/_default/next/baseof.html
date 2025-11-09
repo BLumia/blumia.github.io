@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	{{ $style := resources.Get "/scss/bootstrap-5.3.8/bootstrap.scss" | toCSS | minify | fingerprint }}
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+	<link rel="stylesheet" href="{{ "css/nextstyle.css" | relURL }}">
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body>
+	<div class="container">
+		{{ partial "next/header" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "next/footer" . }}
+	</div>
+	<script defer src="{{ "js/bootstrap.bundle.min.js" | relURL }}"></script>
+</body>
+</html>

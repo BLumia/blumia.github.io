@@ -503,9 +503,9 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px
+  lg: 850px,
+  xl: 960px,
+  xxl: 1140px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -626,9 +626,9 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
+$line-height-base:            1.8 !default;
+$line-height-sm:              1.55 !default;
+$line-height-lg:              2.3 !default;
 
 $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default;
