@@ -2,11 +2,11 @@
 	<main class="posts">
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
 		{{ range $paginator.Pages }}
-			<h3><a href="{{ .Permalink }}">{{ .Title }}</a><small><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 01, 2006" }}</time></small></h3>
+			<h3><a href="{{ .Permalink }}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">{{ .Title }}</a><small><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 01, 2006" }}</time></small></h3>
 		{{ end }}
 		{{ partial "pagination.html" . }}
 	</main>
 	{{ with .OutputFormats.Get "rss" -}}
-	<div style="margin: 10px; margin-top: 0;"><small>subscribe <a href="{{ .RelPermalink }}">via RSS</a></small></div>
+	<div style="margin: 10px; margin-top: 0;"><small>subscribe <a href="{{ .RelPermalink }}" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">via RSS</a></small></div>
 	{{ end }}
 {{ end }}

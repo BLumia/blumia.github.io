@@ -1,14 +1,13 @@
 ---
 title: "Changelog"
 subtitle: "...changelog?"
-type: next
 aliases:
   - 'changelog.html'
 ---
 
 #### 2025/11/9
 
- - For some pages, test if we can adapt to bootstrap.
+ - Switch to bootstrap-based theme.
 
 #### 2019/1/8
 

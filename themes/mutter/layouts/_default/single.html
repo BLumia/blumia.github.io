@@ -2,7 +2,7 @@
 	<main>
 		<article>
 			<h1 hidden>{{ .Title }}</h1>
-			{{ if .Date }}
+			{{ if and .Date (not .Params.disableDate) }}
 			<p><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 02, 2006 15:04" }}</time></p>
 			<!-- {{ $ageDays := div (sub now.Unix .Date.Unix) 86400 }}
 			{{ if gt $ageDays 365 }}

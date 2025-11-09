@@ -1,15 +1,28 @@
-<header>
-	<!-- <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> -->
-	{{ with .Site.Menus.main }}
-	<nav>
-		<ul>
-			{{ range . }}
-			<li><a class="nobb" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
-	<!-- check if .Title exists and if so show title-->
+<header class="header">
+  <nav class="navbar navbar-expand-sm">
+    <div class="container">
+      <a class="navbar-brand active" href="{{ .Site.BaseURL | relLangURL }}">
+        <span class="visually-hidden">{{ i18n "home" }}</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenus" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenus">
+        {{ with .Site.Menus.main }}
+        <ul class="navbar-nav flex-wrap ms-md-auto">
+          {{ range . }}
+          <li class="nav-item ms-4">
+            <a href="{{ .URL | relURL }}" class="nav-link">
+            {{ .Name }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </nav>
+  	<!-- check if .Title exists and if so show title-->
 	{{ if .Title }}
 		<h1>{{ .Title }}</h1>
 	{{ end }}
@@ -18,3 +31,4 @@
 	{{ end }}
 	<hr/>
 </header>
+

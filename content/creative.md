@@ -1,7 +1,6 @@
 ---
 title: "Creative"
 subtitle: "Check out what I created."
-type: next
 aliases:
   - 'Creative.html'
 ---
