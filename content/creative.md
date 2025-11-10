@@ -24,6 +24,8 @@ Most newer projects come with a license file, please refer to them for licensing
 
 ### Active Projects
 
+> [!NOTE] This section is outdated, please see ["Applications" page]({{< ref "apps" >}})
+
 // TODO 19-12-09: update this page.
 
 {{< details summary="[Private Cloud Music](https://github.com/BLumia/Private-Cloud-Music) a really simple and easy to use online music player." >}}

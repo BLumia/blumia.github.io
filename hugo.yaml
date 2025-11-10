@@ -14,9 +14,12 @@ menus:
   - name: Archives
     pageRef: /post
     weight: 2
+  - name: Applications
+    pageRef: /apps
+    weight: 3
   - name: Creative
     pageRef: /Creative
-    weight: 3
+    weight: 4
   - name: About
     pageRef: /about
-    weight: 4
+    weight: 5

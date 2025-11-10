@@ -1,0 +1,43 @@
+<div class="row">
+
+{{- /* param: optional name of the front-matter key to render (e.g. param="activeapps").
+       Defaults to `apps` when omitted. */ -}}
+{{- $key := .Get "param" -}}
+{{- $apps := default .Page.Params.apps (index .Page.Params $key) -}}
+
+{{- if $apps -}}
+  {{- range $apps }}
+  <div class="card col-sm-6 col-lg-4">
+    <div class="card-body">
+      <h5 class="card-title">{{ .name }}</h5>
+      <p class="card-text mb-0">{{.description | safeHTML }}</p>
+      <p class="mb-0">Available for:
+        {{- range .platforms }}
+          {{- if eq . "windows" }} <i class="fa-brands fa-windows"></i>{{ end -}}
+          {{- if eq . "linux" }} <i class="fa-brands fa-linux"></i>{{ end -}}
+          {{- if eq . "macos" }} <i class="fa-brands fa-apple"></i>{{ end -}}
+          {{- if eq . "android" }} <i class="fa-brands fa-android"></i>{{ end -}}
+          {{- if eq . "browser" }} <i class="fa-brands fa-chrome"></i>{{ end -}}
+        {{- end }}
+      </p>
+    </div>
+
+    {{- /* support both `srcurl` front-matter keys */ -}}
+    <div class="card-footer bg-transparent">
+      {{- with .dlurl }}
+      <a href="{{ . }}" class="btn btn-primary">Get it!</a>
+      {{- end }}
+      {{- with .demourl }}
+      <a href="{{ . }}" class="btn btn-outline-primary">Demo</a>
+      {{- end }}
+      {{- with .srcurl }}
+      <a href="{{ . }}" class="btn btn-outline-secondary">Source</a>
+      {{- end }}
+    </div>
+  </div>
+  {{- end }}
+{{- else -}}
+  <!-- No apps defined in front matter for key: {{ $key }} -->
+{{- end }}
+
+</div>

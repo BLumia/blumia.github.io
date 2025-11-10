@@ -1,0 +1,152 @@
+---
+title: "BLumia :: Applications"
+subtitle: "My Applications / Programs"
+layout: single
+disableDate: true
+apps:
+- name: "Pineapple Pictures"
+  description: "Quick and simple image viewer."
+  dlurl: "https://link.blumia.net/pineapple-pictures?utm_source=www.blumia.net"
+  srcurl: "https://github.com/BLumia/pineapple-pictures"
+  platforms:
+  - windows
+  - macos
+  - linux
+- name: "Pineapple Tracker Player"
+  description: "Cross-platform Modular Music player."
+  dlurl: "https://github.com/BLumia/pineapple-tracker-player/releases/latest"
+  srcurl: "https://github.com/BLumia/pineapple-tracker-player"
+  platforms:
+  - windows
+  - macos
+  - linux
+- name: "Pineapple Music"
+  description: "Pure local directory-based music player with chapter support."
+  dlurl: "https://github.com/BLumia/pineapple-music/releases/latest"
+  srcurl: "https://github.com/BLumia/pineapple-music"
+  platforms:
+  - windows
+  - linux
+- name: "Pineapple MIDI Player"
+  description: "SoundFont MIDI player with sidecar SF2 file support."
+  dlurl: "https://github.com/BLumia/pineapple-midi-player/releases/latest"
+  srcurl: "https://github.com/BLumia/pineapple-midi-player"
+  platforms:
+  - windows
+  - linux
+- name: "Pineapple Steam Recording Exporter"
+  description: "Export Game DVR recorded by Steam client via FFmpeg without re-encoding, and share exported videos via local network."
+  dlurl: "https://flathub.org/apps/net.blumia.pineapple-steam-recording-exporter"
+  srcurl: "https://github.com/BLumia/pineapple-steam-recording-exporter"
+  platforms:
+  - windows
+  - linux
+- name: "Pineapple Lock Screen"
+  description: "Turn your Android phone's screen off without using the physical power button, without root permission."
+  dlurl: "https://link.blumia.net/lockscreenplus-playstore?utm_source=www.blumia.net"
+  srcurl: "https://github.com/BLumia/pineapple-lock-screen"
+  platforms:
+  - android
+- name: "Pineapple Metronome"
+  description: "Simple metronome application for mobile."
+  dlurl: "https://play.google.com/store/apps/details?id=net.blumia.pineapple.metronome"
+  srcurl: "https://github.com/BLumia/pineapple-metronome"
+  platforms:
+  - android
+- name: "Pineapple Comic Reader"
+  description: "A client-side implementation for browsing comics from YACReaderLibraryServer."
+  srcurl: "https://github.com/BLumia/pineapple-comic-reader"
+  platforms:
+  - windows
+  - linux
+  - android
+- name: "Pineapple Comics"
+  description: "Pineapple Comic Reader but with a Material-based UI for Android."
+  dlurl: "https://play.google.com/store/apps/details?id=net.blumia.pineapple.comics"
+  srcurl: "https://github.com/BLumia/pineapple-comic-reader"
+  platforms:
+  - android
+activeapps:
+- name: "TouHou Player"
+  description: "Play TouHou Soundtrack by simply dragging the game file to the app.<br/>Co-op project with <a href='https://github.com/chirs241097'>Chris241097</a>"
+  dlurl: "https://bearkidsteam.github.io/thplayer/"
+  srcurl: "https://github.com/BearKidsTeam/thplayer"
+  platforms:
+  - windows
+  - macos
+  - linux
+- name: "Private Cloud Music"
+  description: "Really simple and easy to use online music player."
+  srcurl: "https://github.com/BLumia/Private-Cloud-Music"
+  platforms:
+  - browser
+- name: "Distro Rack"
+  description: "Feature-rich Distrobox GUI for Qt/QML-based DEs like KDE and DDE"
+  srcurl: "https://github.com/BLumia/distro-rack"
+  platforms:
+  - linux
+- name: "Awesome"
+  description: "Simple and lightweight stuff-sharing web app write in django."
+  demourl: "https://blumia.pythonanywhere.com/"
+  srcurl: "https://github.com/BearKidsTeam/Awesome"
+  platforms:
+  - browser
+archivedapps:
+- name: "BLumiaOJ"
+  description: "HUSTOJ compatible, Online Judge system."
+  srcurl: "https://github.com/BLumia/BLumiaOJ"
+  platforms:
+  - browser
+- name: "Pineapple Synth (Mini)"
+  description: "Simple 2xOSC VST2 synthesizer plugin"
+  srcurl: "https://github.com/BLumia/PineappleSynth"
+  platforms:
+  - windows
+- name: "ShadowPlayer::BLumia"
+  description: "Fork of <a href='https://github.com/ShadowPower/ShadowPlayer'>ShadowPlayer</a> with a-b loop, osu! style mini UI and playlist autoload features."
+  srcurl: "https://github.com/BLumia/ShadowPlayer-BLumia"
+  platforms:
+  - windows
+- name: "Mutter"
+  description: "Lightweight scaffold for blogging and creating web pages."
+  srcurl: "https://github.com/BLumia/Mutter"
+  platforms:
+  - browser
+---
+
+<div class="alert alert-primary" role="alert">
+  If you like my work, consider support me on <a href="https://ko-fi.com/BLumia">Ko-fi</a>.
+</div>
+
+<div class="container">
+
+<h3 class="border-0">Pineapple Suite</h3>
+<p>
+    A set of applications made by me primary for myself. These are published in order to make others who have similar needs also be able to benefit from these apps.
+</p>
+
+{{< apps >}}
+
+<h3 class="border-0 mt-4">My Other Projects</h3>
+<p>
+    Beside "Pineapple Suite", I also have some other projects that are still regularly maintained.
+</p>
+
+{{< apps param="activeapps" >}}
+
+<h3 class="border-0 mt-4">Archived Projects</h3>
+<p>
+    Some of my projects are old or stopped for support for some reason, or just archived because there’s no need for update. It may still works and maybe in someday I will probable pick up some projects.
+</p>
+
+{{< apps param="archivedapps" >}}
+
+</div>
+
+<div class="alert alert-info mt-3" role="alert">
+  Note: This whole page is still sort of WIP.<br/>
+  The page might be moved to somewhere else in the future, but at least the infomration on this page is up-to-date.<br/>
+  In case you have any questions related to this page, please contact me in any form. See the <a href="{{< ref "about" >}}">About</a> page.
+</div>
+
+<link rel="stylesheet" href="/assets/font-awesome/css/all.min.css">

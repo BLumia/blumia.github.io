@@ -5,6 +5,10 @@ aliases:
   - 'changelog.html'
 ---
 
+#### 2025/11/10
+
+ - A new "apps" page, for some reason.
+
 #### 2025/11/9
 
  - Switch to bootstrap-based theme.
