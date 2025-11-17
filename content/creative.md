@@ -15,10 +15,11 @@ Most newer projects come with a license file, please refer to them for licensing
 
 ### My Working Gears
 
- - [Qt Creator](https://www.qt.io/download-open-source/) My "RAD" IDE for Qt and/or C++ related development.
  - [Visual Studio Code](https://code.visualstudio.com/) and [code-server](https://github.com/coder/code-server) IDE for general purpose development.
+ - [Zed](https://zed.dev/) In case sometimes I don't want to use VSCode.
+ - [Qt Creator](https://www.qt.io/download-open-source/) My "RAD" IDE for Qt and/or C++ related development.
  - [Visual Studio Community](https://www.visualstudio.com/vs/community/) Free IDE offered by Microsoft, for some of my project on Windows.
- - [Kate](https://kate-editor.org/get-it/) Taking notes, writing script, PHP or some quick programming.
+ - [Kate](https://kate-editor.org/get-it/) Taking notes, plain text editing.
  - [MSYS2](https://www.msys2.org/) When working on Windows C/C++ projects.
  - [Vim](http://www.vim.org/)/[NeoVim](https://neovim.io/) with [NvChad](https://nvchad.com/) ~~Edit config files~~ Help poor blumia in Uganda!
 
