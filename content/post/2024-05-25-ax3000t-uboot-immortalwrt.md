@@ -6,6 +6,10 @@ aliases:
   - '/2024/05/25/ax3000t-uboot-immortalwrt.html'
 ---
 
+> [!WARNING]
+> 这篇博客写于 2024/05/25，当时小米 AX3000T 没有 V2 / V3 版本。**这篇文章的内容（尤其是 uboot）不适用于 V2 / V3 版本**！  
+> 另请参阅 [hanwckf/bl-mt798x#88](https://github.com/hanwckf/bl-mt798x/issues/88) 的相关讨论。
+
 ## 杂话
 
 没想到八百年不更一次博客，这次更新竟然又是写折腾路由器的...
